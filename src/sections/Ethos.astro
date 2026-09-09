@@ -1,0 +1,21 @@
+---
+import ethos from '../../content/ethos.json';
+
+interface Props {
+  kicker?: string;
+  lines?: string[];
+  close?: string;
+}
+
+const kicker = Astro.props.kicker ?? ethos.kicker;
+const lines = Astro.props.lines ?? ethos.lines;
+const close = Astro.props.close ?? ethos.close;
+---
+
+<section class="ethos" id="ethos" aria-labelledby="ethos-heading">
+  <h2 class="kicker" id="ethos-heading">{kicker}</h2>
+  <ul class="ethos-list">
+    {lines.map((line) => <li>{line}</li>)}
+  </ul>
+  <p class="ethos__close">{close}</p>
+</section>

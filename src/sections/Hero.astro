@@ -1,0 +1,24 @@
+---
+import site from '../../content/site.json';
+
+interface Props {
+  name?: string;
+  role?: string;
+  students?: string;
+  lead?: string;
+}
+
+const {
+  name = site.name,
+  role = site.role,
+  students = site.students,
+  lead = site.lead,
+} = Astro.props;
+---
+
+<header class="hero" aria-labelledby="hero-heading">
+  <h1 id="hero-heading">{name}</h1>
+  <p class="hero__role">{role}</p>
+  <p class="hero__students">{students}</p>
+  <p class="hero__lead">{lead}</p>
+</header>
