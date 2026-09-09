@@ -1,0 +1,41 @@
+---
+import work from '../../content/work.json';
+
+interface WorkLink {
+  label: string;
+  href: string;
+  optional?: boolean;
+}
+
+interface Props {
+  kicker?: string;
+  links?: WorkLink[];
+}
+
+const kicker = Astro.props.kicker ?? work.kicker;
+const links = (Astro.props.links ?? work.links) as WorkLink[];
+
+function hostLabel(href: string): string {
+  try {
+    return new URL(href).host.replace(/^www\./, '');
+  } catch {
+    return href;
+  }
+}
+---
+
+<section class="work" id="work" aria-labelledby="work-heading">
+  <h2 class="kicker" id="work-heading">{kicker}</h2>
+  <ul class="work-list">
+    {
+      links.map((link) => (
+        <li class:list={{ 'work-list__item--optional': link.optional }}>
+          <a href={link.href} rel="noopener noreferrer">
+            <span class="work-list__label">{link.label}</span>
+            <span class="work-list__hint">{hostLabel(link.href)}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
