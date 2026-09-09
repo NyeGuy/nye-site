@@ -1,15 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
 import Hero from '../sections/Hero.astro';
+import Writing from '../sections/Writing.astro';
 import Work from '../sections/Work.astro';
 import Background from '../sections/Background.astro';
 import Ethos from '../sections/Ethos.astro';
 import site from '../../content/site.json';
+import writing from '../../content/writing.json';
+import { getParagraphPosts } from '../lib/paragraph';
+
+const posts = await getParagraphPosts();
 ---
 
 <BaseLayout>
+  <SiteNav />
   <div class="page wrap">
     <Hero />
+    <Writing posts={posts} limit={writing.homeCount} showAllLink />
     <Work />
     <Background />
     <Ethos />

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import Writing from '../../sections/Writing.astro';
+import writing from '../../../content/writing.json';
+import site from '../../../content/site.json';
+import { getParagraphPosts } from '../../lib/paragraph';
+
+const posts = await getParagraphPosts();
+---
+
+<BaseLayout title={writing.title} description={writing.description}>
+  <SiteNav />
+  <div class="page wrap">
+    <header class="page-head">
+      <h1>{writing.heading}</h1>
+      <p class="page-head__lead">{writing.intro}</p>
+      <p class="page-head__note">{writing.sourceNote}</p>
+    </header>
+    <Writing posts={posts} kicker="Paragraph" intro="" />
+    <footer class="site-footer">
+      <p>{site.name}</p>
+    </footer>
+  </div>
+</BaseLayout>

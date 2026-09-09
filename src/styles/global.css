@@ -156,11 +156,69 @@ p:last-child {
    ========================================================================== */
 
 .page {
-  padding: clamp(4.5rem, 12vw, 8rem) 0 clamp(3.5rem, 8vw, 5.5rem);
+  padding: clamp(2.5rem, 8vw, 5rem) 0 clamp(3.5rem, 8vw, 5.5rem);
 }
 
 .page > * + * {
   margin-top: clamp(3.25rem, 8vw, 5rem);
+}
+
+.page--cv {
+  --wrap: 44rem;
+}
+
+.page-head__lead {
+  margin: 1rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.page-head__note {
+  margin: 0.85rem 0 0;
+  font-size: 0.92rem;
+  color: var(--g-50);
+}
+
+/* Nav
+   ========================================================================== */
+
+.site-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.15rem 0 0;
+}
+
+.site-nav__home {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.site-nav__home:hover,
+.site-nav__home:focus-visible {
+  box-shadow: inset 0 -1px 0 var(--accent);
+}
+
+.site-nav__links {
+  display: flex;
+  gap: 1.15rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--g-22);
+}
+
+.site-nav a.is-current {
+  color: var(--g-10);
+  box-shadow: inset 0 -1px 0 var(--accent);
 }
 
 /* Hero
@@ -263,6 +321,131 @@ p:last-child {
 
 .background p:last-child {
   margin-bottom: 0;
+}
+
+/* Writing
+   ========================================================================== */
+
+.writing__intro,
+.writing__empty {
+  margin: 0 0 1.25rem;
+  max-width: 32rem;
+}
+
+.writing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.writing-list li {
+  border-top: 1px solid var(--g-80);
+  padding: 1rem 0 1.05rem;
+}
+
+.writing-list li:last-child {
+  border-bottom: 1px solid var(--g-80);
+}
+
+.writing-item time {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--g-50);
+}
+
+.writing-item h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.writing-item h3 a {
+  text-decoration: none;
+}
+
+.writing-item h3 a:hover,
+.writing-item h3 a:focus-visible {
+  box-shadow: inset 0 -1px 0 var(--accent);
+}
+
+.writing-item p {
+  margin: 0.45rem 0 0;
+  max-width: 32rem;
+  color: var(--g-22);
+}
+
+.writing__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin: 1.15rem 0 0;
+}
+
+.writing__links a {
+  color: var(--accent-ink);
+}
+
+/* CV
+   ========================================================================== */
+
+.cv-intro p {
+  margin: 0 0 0.85rem;
+  max-width: 36rem;
+  font-size: 1.05rem;
+}
+
+.cv-source {
+  font-size: 0.92rem;
+  color: var(--g-50);
+}
+
+.cv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0.75rem 1.25rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--g-94);
+}
+
+.cv-entry:last-child {
+  border-bottom: 1px solid var(--g-94);
+}
+
+.cv-entry__when {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--g-50);
+}
+
+.cv-entry__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.cv-entry__detail {
+  margin: 0.2rem 0 0;
+  font-size: 0.92rem;
+  color: var(--g-22);
+}
+
+@media (max-width: 560px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
 }
 
 /* Ethos

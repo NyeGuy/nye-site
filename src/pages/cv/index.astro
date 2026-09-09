@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import cv from '../../../content/cv.json';
+import site from '../../../content/site.json';
+---
+
+<BaseLayout title={cv.title} description={cv.description}>
+  <SiteNav />
+  <div class="page wrap page--cv">
+    <header class="page-head">
+      <h1>{cv.fullName}</h1>
+      <p class="hero__role">{cv.tagline}</p>
+      <p class="hero__students">{cv.quote}</p>
+    </header>
+
+    <section class="cv-intro" aria-label="Summary">
+      {cv.intro.map((paragraph) => <p>{paragraph}</p>)}
+      <p class="cv-source">
+        Sourced from the
+        <a href={cv.sourceHref} rel="noopener noreferrer">{cv.sourceLabel}</a>.
+        {cv.presentNote}
+      </p>
+    </section>
+
+    {
+      cv.sections.map((section, index) => (
+        <section class="cv-section" aria-labelledby={`cv-section-${index}`}>
+          <h2 class="kicker" id={`cv-section-${index}`}>
+            {section.heading}
+          </h2>
+          <ul class="cv-list">
+            {section.entries.map((entry) => (
+              <li class="cv-entry">
+                <p class="cv-entry__when">{entry.when}</p>
+                <div>
+                  <p class="cv-entry__title">{entry.title}</p>
+                  {entry.detail && <p class="cv-entry__detail">{entry.detail}</p>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <footer class="site-footer">
+      <p>{site.name}</p>
+    </footer>
+  </div>
+</BaseLayout>

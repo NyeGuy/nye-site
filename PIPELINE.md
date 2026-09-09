@@ -1,6 +1,8 @@
 # Nye site — dev pipeline
 
-Official GitHub Pages site for **Nye Warburton**. Static Astro. Home only. No CMS, no analytics, no webfonts, no runtime JavaScript.
+Official GitHub Pages site for **Nye Warburton**. Static Astro. No CMS, no analytics, no webfonts, no runtime JavaScript.
+
+Home, `/writing`, and `/cv`. Writing titles are ingested from Paragraph RSS at **build time**. Essays are not mirrored.
 
 This is a **personal brand** track. Do not nest Satellite Lab content here.
 
@@ -25,7 +27,7 @@ This track is Nye’s personal homepage only. Anvil owns the work; Forge leads; 
 - Open a pull request. Do not merge it.
 - Nye merges. No one else.
 
-`main` on this remote may still be the initial stub until the site PR lands. The stack documented here is the Astro/Pages tree (`package.json`, `astro.config.mjs`, `.github/workflows/deploy.yml`, `content/`).
+`main` on this remote may still be the initial stub until a site PR lands. The stack documented here is the Astro/Pages tree (`package.json`, `astro.config.mjs`, `.github/workflows/deploy.yml`, `content/`).
 
 ## Local
 
@@ -42,7 +44,7 @@ Dev server: [http://localhost:4321/nye-site/](http://localhost:4321/nye-site/)
 npm run build
 ```
 
-Writes the static site to `dist/`.
+Writes the static site to `dist/`. The build fetches `https://paragraph.com/@nyewarburton.eth/rss` and keeps title, date, url, and description. Full essay bodies are discarded.
 
 ### npm scripts
 
@@ -51,7 +53,7 @@ Every script in `package.json`:
 | Script | Command | What it does |
 | --- | --- | --- |
 | `dev` | `astro dev` | Local dev server |
-| `build` | `astro build` | Production static build → `dist/` |
+| `build` | `astro build` | Production static build → `dist/` (includes RSS ingest) |
 | `preview` | `astro preview` | Serve `dist/` locally (run `build` first) |
 
 There are no other npm scripts.
@@ -67,7 +69,11 @@ This repo is a **project site**, not a user site. `astro.config.mjs` sets:
 
 The URL prefix is `/nye-site/` (repo-name base). Local, preview, and production links must keep it. `src/lib/paths.ts` (`withBase`) prefixes in-site hrefs. Do not drop the prefix when checking the favicon or sitemap.
 
-Expected production URL: `https://nyeguy.github.io/nye-site/`
+Expected production URLs:
+
+- `https://nyeguy.github.io/nye-site/`
+- `https://nyeguy.github.io/nye-site/writing/`
+- `https://nyeguy.github.io/nye-site/cv/`
 
 A user site at `https://nyeguy.github.io/` would require a different repo (`nyeguy.github.io`), `site` pointed at that host, and **no** `base`. That is not how this repo is configured.
 
@@ -86,7 +92,7 @@ Name: **Deploy to GitHub Pages**.
 
 There is **no** `pull_request` trigger and **no** PR preview environment. Opening a PR does not publish a preview URL. Do not treat Actions on a feature branch as a staging site: a manual run still deploys to the same `github-pages` environment.
 
-**Build job:** `actions/checkout@v7`, then [`withastro/action@v6`](https://github.com/withastro/action) (install, `astro build`, upload Pages artifact).
+**Build job:** `actions/checkout@v7`, then [`withastro/action@v6`](https://github.com/withastro/action) (install, `astro build`, upload Pages artifact). The build host needs outbound HTTPS for the Paragraph RSS feed.
 
 **Deploy job:** `actions/deploy-pages@v5` into the `github-pages` environment.
 
@@ -109,13 +115,15 @@ Pages will not publish until repo **Settings → Pages → Build and deployment 
 
 **Where editable content lives**
 
-Visitor-facing copy is in [`content/`](./content/). Components read those files; they do not hard-code body copy.
+Visitor-facing copy is in [`content/`](./content/). Components read those files; they do not hard-code body copy. Essay titles come from RSS at build time, not from `content/`.
 
 | Path | What it holds |
 | --- | --- |
 | `content/site.json` | Name, role, students line, lead, title, description |
 | `content/work.json` | Writing and publishing links |
-| `content/background.json` | Background paragraphs (no invented CV) |
+| `content/writing.json` | Writing index labels and Substack subscribe link |
+| `content/background.json` | Home background paragraphs |
+| `content/cv.json` | Public CV (Dean of STEC for present) |
 | `content/ethos.json` | Ethos lines and closing line |
 
 Agent rules: [AGENTS.md](./AGENTS.md). Human overview: [README.md](./README.md).
@@ -130,3 +138,4 @@ Do not touch:
 - **nye-site-play** deploy target (Vercel). Official Pages stays here.
 - **CMS**, analytics, or CDN webfonts
 - **Invented CV**, freelance availability, logos, or photographs
+- **Full-text essay mirrors** (link out to Paragraph)

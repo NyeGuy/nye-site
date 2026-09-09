@@ -1,10 +1,13 @@
 ---
 import work from '../../content/work.json';
+import { withBase } from '../lib/paths';
 
 interface WorkLink {
   label: string;
   href: string;
   optional?: boolean;
+  internal?: boolean;
+  hint?: string;
 }
 
 interface Props {
@@ -25,6 +28,16 @@ function hostLabel(href: string): string {
     return href;
   }
 }
+
+function hrefFor(link: WorkLink): string {
+  return link.internal ? withBase(link.href) : link.href;
+}
+
+function hintFor(link: WorkLink): string {
+  if (link.hint) return link.hint;
+  if (link.internal) return 'On this site';
+  return hostLabel(link.href);
+}
 ---
 
 <section class="work" id="work" aria-labelledby="work-heading">
@@ -33,9 +46,9 @@ function hostLabel(href: string): string {
     {
       links.map((link) => (
         <li class:list={{ 'work-list__item--optional': link.optional }}>
-          <a href={link.href} rel="noopener noreferrer">
+          <a href={hrefFor(link)} rel={link.internal ? undefined : 'noopener noreferrer'}>
             <span class="work-list__label">{link.label}</span>
-            <span class="work-list__hint">{hostLabel(link.href)}</span>
+            <span class="work-list__hint">{hintFor(link)}</span>
           </a>
         </li>
       ))

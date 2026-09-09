@@ -1,0 +1,63 @@
+---
+import writing from '../../content/writing.json';
+import type { ParagraphPost } from '../lib/paragraph';
+import { withBase } from '../lib/paths';
+
+interface Props {
+  posts: ParagraphPost[];
+  kicker?: string;
+  intro?: string;
+  limit?: number;
+  showAllLink?: boolean;
+}
+
+const kicker = Astro.props.kicker ?? writing.kicker;
+const intro = Astro.props.intro ?? writing.intro;
+const posts = Astro.props.limit
+  ? Astro.props.posts.slice(0, Astro.props.limit)
+  : Astro.props.posts;
+const showAllLink = Astro.props.showAllLink ?? false;
+---
+
+<section class="writing" id="writing" aria-labelledby="writing-heading">
+  <h2 class="kicker" id="writing-heading">{kicker}</h2>
+  {intro && <p class="writing__intro">{intro}</p>}
+
+  {
+    posts.length === 0 ? (
+      <p class="writing__empty">
+        {writing.empty}{' '}
+        <a href={writing.feedHref} rel="noopener noreferrer">
+          {writing.feedLabel}
+        </a>
+      </p>
+    ) : (
+      <ul class="writing-list">
+        {posts.map((post) => (
+          <li>
+            <article class="writing-item">
+              <time datetime={post.date || undefined}>{post.dateLabel}</time>
+              <h3>
+                <a href={post.url} rel="noopener noreferrer">
+                  {post.title}
+                </a>
+              </h3>
+              {post.description && <p>{post.description}</p>}
+            </article>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <p class="writing__links">
+    {
+      showAllLink && (
+        <a class="writing__more" href={withBase('writing/')}>
+          {writing.allLabel}
+        </a>
+      )
+    }
+    <a href={writing.subscribeHref} rel="noopener noreferrer">{writing.subscribeLabel}</a>
+  </p>
+</section>

@@ -6,7 +6,7 @@
 >
 > Dev pipeline: [PIPELINE.md](./PIPELINE.md) · Agent rules: [AGENTS.md](./AGENTS.md)
 
-Personal homepage — a static Astro build, no runtime JavaScript, no CMS, no analytics, no webfonts. Home only: read work, see background, see ethos. Copy lives in `content/` so it can be edited without touching components.
+Personal homepage — a static Astro build, no runtime JavaScript, no CMS, no analytics, no webfonts. Home, writing index, and CV. Copy lives in `content/` so it can be edited without touching components. Paragraph essays are listed at build time from RSS and linked out.
 
 Sibling playground (Vercel, `base: '/'`): [NyeGuy/nye-site-play](https://github.com/NyeGuy/nye-site-play).
 
@@ -24,7 +24,7 @@ Dev server: [http://localhost:4321/nye-site/](http://localhost:4321/nye-site/)
 The `/nye-site/` prefix matches GitHub project Pages. Do not drop it when checking links.
 
 ```bash
-npm run build      # writes static files to dist/
+npm run build      # writes static files to dist/ (fetches Paragraph RSS)
 npm run preview    # serves dist/ locally
 ```
 
@@ -50,21 +50,24 @@ To host as a user site instead (`https://nyeguy.github.io/`), move this project 
 
 ## Edit copy
 
-All visitor-facing text is under `content/`. Components read those files; they do not hard-code body copy.
+Visitor-facing text is under `content/`. Components read those files; they do not hard-code body copy. Essay titles, dates, urls, and descriptions come from the Paragraph RSS feed at build time.
 
 | File | What it holds |
 | --- | --- |
 | `content/site.json` | Name, role, students line, lead, document title, description |
-| `content/work.json` | Paragraph, Substack, Writing, optional Book |
-| `content/background.json` | Background paragraphs |
+| `content/work.json` | Paragraph, Substack (subscribe), Writing, CV, optional Book |
+| `content/writing.json` | Writing index labels and subscribe link |
+| `content/background.json` | Home background paragraphs |
+| `content/cv.json` | Public CV; present title is Dean of STEC |
 | `content/ethos.json` | Ethos lines and “Make it Happen.” |
 
-Do not invent CV lines, freelance availability, logos, or photographs.
+Do not invent CV lines, freelance availability, logos, or photographs. Do not paste full essays into the repo.
 
 ## Content rules
 
 - Personal brand only. No Satellite Lab nested content.
-- Background is the approved public path only. No invented credits.
+- `/cv` is the public CV only (https://nyewarburton.com/cv-2/). Present role is Dean of STEC at SCAD.
+- Writing lists Paragraph RSS items and links out. Substack is a subscribe link.
 - Ethos lines stay exact.
 - Grey palette with an optional restrained accent, quieter than Satellite Lab gold.
 - System fonts only. No analytics, CDNs, or webfonts.
@@ -74,3 +77,4 @@ Do not invent CV lines, freelance availability, logos, or photographs.
 - Astro, `output: 'static'`
 - System stacks: Georgia (headings), Helvetica Neue / Arial (body, labels)
 - Zero runtime dependencies
+- Build-time fetch of Paragraph RSS

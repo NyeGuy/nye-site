@@ -7,11 +7,18 @@
     },
     {
       "label": "Substack",
-      "href": "https://nyewarburton.substack.com"
+      "href": "https://nyewarburton.substack.com",
+      "hint": "Subscribe"
     },
     {
       "label": "Writing",
-      "href": "https://nyewarburton.com/writing/"
+      "href": "/writing/",
+      "internal": true
+    },
+    {
+      "label": "CV",
+      "href": "/cv/",
+      "internal": true
     },
     {
       "label": "Book",
