@@ -1,0 +1,32 @@
+---
+import site from '../../content/site.json';
+import { withBase } from '../lib/paths';
+
+const homeHref = withBase('/');
+const writingHref = withBase('writing/');
+const cvHref = withBase('cv/');
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const homePath = homeHref.replace(/\/+$/, '') || '/';
+const writingPath = writingHref.replace(/\/+$/, '');
+const cvPath = cvHref.replace(/\/+$/, '');
+
+const onHome = path === homePath;
+const onWriting = path === writingPath;
+const onCv = path === cvPath;
+---
+
+<header class="site-nav wrap">
+  <a class:list={['site-nav__home', { 'is-current': onHome }]} href={homeHref}>{site.name}</a>
+  <nav aria-label="Site">
+    <ul class="site-nav__links">
+      <li>
+        <a class:list={{ 'is-current': onWriting }} href={writingHref} aria-current={onWriting ? 'page' : undefined}>
+          Writing
+        </a>
+      </li>
+      <li>
+        <a class:list={{ 'is-current': onCv }} href={cvHref} aria-current={onCv ? 'page' : undefined}>CV</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,18 @@
+{
+  "kicker": "Writing",
+  "heading": "Writing",
+  "title": "Writing – Nye Warburton",
+  "description": "Selected essays by Nye Warburton. Full pieces live on Paragraph and the original hosts.",
+  "intro": "I write to understand. A short draft set — title, date, and a line — then the essay lives where it was published.",
+  "homeCount": 5,
+  "allLabel": "All writing",
+  "feedLabel": "More on Paragraph",
+  "feedHref": "https://paragraph.com/@nyewarburton.eth",
+  "subscribeLabel": "Subscribe on Substack",
+  "subscribeHref": "https://nyewarburton.substack.com",
+  "empty": "Essays are published on Paragraph.",
+  "sourceNote": "Provisional draft list. Not a ranking. Nye will name the set.",
+  "searchLabel": "Search this draft set",
+  "searchEmpty": "No matches in this draft set.",
+  "draftBadge": "Draft set"
+}

@@ -1,0 +1,16 @@
+---
+import background from '../../content/background.json';
+
+interface Props {
+  kicker?: string;
+  paragraphs?: string[];
+}
+
+const kicker = Astro.props.kicker ?? background.kicker;
+const paragraphs = Astro.props.paragraphs ?? background.paragraphs;
+---
+
+<section class="background" id="background" aria-labelledby="background-heading">
+  <h2 class="kicker" id="background-heading">{kicker}</h2>
+  {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+</section>

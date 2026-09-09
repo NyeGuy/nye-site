@@ -1,0 +1,57 @@
+---
+import work from '../../content/work.json';
+import { withBase } from '../lib/paths';
+
+interface WorkLink {
+  label: string;
+  href: string;
+  optional?: boolean;
+  internal?: boolean;
+  hint?: string;
+}
+
+interface Props {
+  kicker?: string;
+  links?: WorkLink[];
+}
+
+const kicker = Astro.props.kicker ?? work.kicker;
+const links = (Astro.props.links ?? work.links) as WorkLink[];
+
+function hostLabel(href: string): string {
+  try {
+    const url = new URL(href);
+    const host = url.host.replace(/^www\./, '');
+    const path = url.pathname.replace(/\/+$/, '');
+    return path && path !== '' ? `${host}${path}/` : host;
+  } catch {
+    return href;
+  }
+}
+
+function hrefFor(link: WorkLink): string {
+  return link.internal ? withBase(link.href) : link.href;
+}
+
+function hintFor(link: WorkLink): string {
+  if (link.hint) return link.hint;
+  if (link.internal) return 'On this site';
+  return hostLabel(link.href);
+}
+---
+
+<section class="work" id="work" aria-labelledby="work-heading">
+  <h2 class="kicker" id="work-heading">{kicker}</h2>
+  <ul class="work-list">
+    {
+      links.map((link) => (
+        <li class:list={{ 'work-list__item--optional': link.optional }}>
+          <a href={hrefFor(link)} rel={link.internal ? undefined : 'noopener noreferrer'}>
+            <span class="work-list__label">{link.label}</span>
+            <span class="work-list__hint">{hintFor(link)}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

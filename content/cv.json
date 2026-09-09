@@ -1,0 +1,545 @@
+{
+  "kicker": "CV",
+  "heading": "CV",
+  "title": "CV – Nye Warburton",
+  "description": "Public CV for Nye Warburton, Dean of STEC at SCAD. Credits as listed on the public CV.",
+  "fullName": "Aneurin (Nye) Warburton",
+  "tagline": "Educator / Creative Technologist / Animator / Game Developer",
+  "quote": "I teach artists to build for what’s coming.",
+  "sourceLabel": "Public CV",
+  "sourceHref": "https://nyewarburton.com/cv-2/",
+  "presentNote": "Present role is Dean of STEC at SCAD. The source page still lists Chair, ITGM.",
+  "intro": [
+    "I am Dean of the School of Creative Technology (STEC) at Savannah College of Art and Design (SCAD). My mission is to prepare students for competitive careers in gaming and interactive media – with an eye towards AI workflows, networked production and immersive technologies.",
+    "I have over 20 years of experience across animated films, TV commercials, and video games. Past credits include Monster House, Avengers, Oblivion, and Men in Black III. As a contractor and entrepreneur, I have built apps, virtual reality, and gamified software experiences.",
+    "Now I focus on educating and mentoring the next generation of digital artists, designers and game developers. As a technical artist, I spend time researching and cultivating the real-time workflows for the deployment of student games and interactive experiences. As a thinker, I write and speak to imagine the art of tomorrow.",
+    "I collaborate with anyone eager to push boundaries. My interests span many intersections of technology and creativity – like games, comics, animation, AI, web3, comedy, philosophy and storytelling."
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "entries": [
+        {
+          "when": "2004",
+          "title": "MFA / Computer Art",
+          "detail": "Academy of Art University, San Francisco, CA"
+        },
+        {
+          "when": "1997",
+          "title": "BFA / Fine Art",
+          "detail": "University of Pennsylvania, Philadelphia, PA"
+        }
+      ]
+    },
+    {
+      "heading": "Professional Experience",
+      "entries": [
+        {
+          "when": "2022 – present",
+          "title": "Dean of STEC, Savannah College of Art and Design",
+          "detail": "Educational Strategist, Creative Catalyst and Manager for SCAD’s ITGM BA, BFA, MA and MFA Game Development Programs"
+        },
+        {
+          "when": "2020 – 2022",
+          "title": "Associate Chair, Interactive Design and Game Development, School of Digital Media, Savannah College of Art and Design",
+          "detail": "Educational Strategist and Manager for SCAD’s ITGM BA, BFA, MA and MFA Game Development Programs"
+        },
+        {
+          "when": "2019 – 2022",
+          "title": "Animation Technologist / Blockchain Game System Researcher, Box Rocket Studio",
+          "detail": "Researching decentralized peer to peer production for creative animation work on the Solana Blockchain."
+        },
+        {
+          "when": "2013 –",
+          "title": "Computer Graphics Consultant",
+          "detail": "Expert in computer graphics, game development, real time animation and pipeline."
+        }
+      ]
+    },
+    {
+      "heading": "Stand Alone Lectures",
+      "entries": [
+        {
+          "when": "Spring 2024",
+          "title": "Disruptions in Gaming: The Rapid Acceleration of Technology and the effect on Game Network Economics (a guess!)",
+          "detail": "Savannah College of Art and Design, Foundational Classes Workshop, Savannah, GA"
+        },
+        {
+          "when": "Fall 2022",
+          "title": "AI Implications: A primer in AI for Computer Graphics Artists and Educators",
+          "detail": "Savannah College of Art and Design, Not-Too-Far-Away Day, Workshop, Savannah, GA"
+        },
+        {
+          "when": "Spring 2022",
+          "title": "Blockchains and Trust: An Intro to Smart Contracts and Decentralized Networks",
+          "detail": "Savannah College of Art and Design, The NFT Series, Scad Extra Workshop, Savannah, GA"
+        },
+        {
+          "when": "Winter 2022",
+          "title": "Previsualization: History, Practice and Evolution",
+          "detail": "Savannah College of Art and Design, Scad Extra Workshop, Savannah, GA"
+        },
+        {
+          "when": "Winter 2021",
+          "title": "Introduction to Machine Learning for Artists",
+          "detail": "Savannah College of Art and Design, Scad Extra Workshop, Savannah, GA"
+        }
+      ]
+    },
+    {
+      "heading": "SCAD ITGM / GAME – Classes",
+      "entries": [
+        {
+          "when": "Fall 2023",
+          "title": "Game Pro Production (Grad Level)",
+          "detail": "Savannah College of Art and Design, School of Digital Media, GAME, Savannah, GA"
+        },
+        {
+          "when": "Spring 2022",
+          "title": "Interactive and Game Portfolio 01",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Winter 2022, Fall 2023 and Winter 2024",
+          "title": "Game Engine Pipeline (Grad Level)",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Winter 2022",
+          "title": "Interactive Portfolio",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Fall 2021",
+          "title": "Interactive Portfolio",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Fall 2021",
+          "title": "VolvoSCAD Pro",
+          "detail": "Savannah College of Art and Design, SCAD Pro, Savannah, GA"
+        },
+        {
+          "when": "Fall 2021, Spring 2024",
+          "title": "Animation for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Spring 2021",
+          "title": "Animation for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Spring 2021",
+          "title": "Delta Tech OpsSCAD Pro",
+          "detail": "Savannah College of Art and Design, SCAD Pro, Savannah, GA"
+        },
+        {
+          "when": "Winter 2021",
+          "title": "Animation for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Winter 2021",
+          "title": "Core Tech for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Fall 2020",
+          "title": "Animation for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        },
+        {
+          "when": "Fall 2020",
+          "title": "Core Art for Games",
+          "detail": "Savannah College of Art and Design, School of Digital Media, ITGM, Savannah, GA"
+        }
+      ]
+    },
+    {
+      "heading": "Other Teaching",
+      "entries": [
+        {
+          "when": "2012 – 2014",
+          "title": "Previsualization, Animation and Game Design Instructor",
+          "detail": "The Art Institute, Santa Monica, CA"
+        },
+        {
+          "when": "1999 – 2000",
+          "title": "Animation Instructor",
+          "detail": "School of Visual Arts, New York, NY"
+        }
+      ]
+    },
+    {
+      "heading": "Stand-Alone Lectures",
+      "entries": [
+        {
+          "when": "2015",
+          "title": "Entrepreneurship and IoT",
+          "detail": "Boston University, MA"
+        },
+        {
+          "when": "2015",
+          "title": "Animation and Technology",
+          "detail": "Academy of Art, San Francisco, CA"
+        },
+        {
+          "when": "2015",
+          "title": "Animation and Technology",
+          "detail": "Cogswell College, Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "heading": "Animation Direction and Development",
+      "entries": [
+        {
+          "when": "2018",
+          "title": "Aatma Studio Rebrand / Relaunch",
+          "detail": "Aatma Studio, San Francisco, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Mitsubishi iJet Sword Paper",
+          "detail": "Animus Studios, Providence, RI"
+        },
+        {
+          "when": "2013",
+          "title": "Get Wild – Short Film",
+          "detail": "Wildlife.LA, Los Angeles, CA"
+        },
+        {
+          "when": "2010",
+          "title": "MadHouse – Short Series",
+          "detail": "Fox Inkubation Development, Los Angeles, CA"
+        },
+        {
+          "when": "2008",
+          "title": "Benny: Escaped Convict",
+          "detail": "Atom.com / Comedy Central, Los Angeles, CA"
+        },
+        {
+          "when": "2008",
+          "title": "Magnetism – Thesis Film",
+          "detail": "Academy of Art University, San Francisco, CA"
+        },
+        {
+          "when": "1999",
+          "title": "Jerry and the Box of Cereal",
+          "detail": "NyeWarburton.com, Seattle, WA"
+        }
+      ]
+    },
+    {
+      "heading": "Game Design, Direction and Development",
+      "entries": [
+        {
+          "when": "2017",
+          "title": "Live Stream Game Show Prototype",
+          "detail": "Sony Television Games, Los Angeles, CA"
+        },
+        {
+          "when": "2016",
+          "title": "Way of the Bow / PulseCat",
+          "detail": "Bloopco Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2015",
+          "title": "Playwell Prototype – HTML5",
+          "detail": "Playwell, Los Angeles, CA"
+        },
+        {
+          "when": "2015",
+          "title": "Stanley Kickback – HTML5",
+          "detail": "NyeWarburton.com, Los Angeles, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Flyer Prototype – Unreal Engine",
+          "detail": "LimbX LLC., Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Word Eater – iOS",
+          "detail": "Fabric Interactive, Los Angeles, CA"
+        },
+        {
+          "when": "2012",
+          "title": "Commander Cluck – iOS Game",
+          "detail": "NyeWarburton.com, Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "heading": "Professional Computer Graphics and Animation",
+      "entries": [
+        {
+          "when": "2018",
+          "title": "Senior Previsualization Artist, Star Trek Discovery, CBS",
+          "detail": "Pixomondo, Los Angeles, CA"
+        },
+        {
+          "when": "2017",
+          "title": "Lead Previsualization Artist, Future Future",
+          "detail": "Pixomondo, Los Angeles, CA"
+        },
+        {
+          "when": "2017",
+          "title": "Previsualization/Layout Supervisor, Skyhunter",
+          "detail": "Pixomondo, Los Angeles, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Animator, Nagano, Microsoft",
+          "detail": "Digital Domain, Los Angeles, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Senior Previsualization Artist, Oblivion, Universal Pictures",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Senior Previsualization Artist, X-Men: Days of Future Past, Fox Features",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2014",
+          "title": "Senior Previsualization Artist, Godzilla, Legendary/Warner Brothers",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Previsualization Artist, Mad Max Game Launch Trailer",
+          "detail": "Digital Domain Commercials, Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Animator/Previsualization Artist, Malificent, Disney",
+          "detail": "Digital Domain, Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Senior Previsualization Artist, 300: Rise of an Empire, Warner Brothers",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Post-Visualization Artist, Robosabient: Rebooted, Marvel",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2013",
+          "title": "Senior Previsualization Artist, Jack the Giant Slayer, Legendary / Warner Brothers",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2012",
+          "title": "Previsualization Artist, NBA2K13, 2K Games",
+          "detail": "Digital Domain Commercials, Los Angeles, CA"
+        },
+        {
+          "when": "2012",
+          "title": "Senior Previsualization Artist, Oz the Great and Powerful, Disney",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2012",
+          "title": "Senior Previsualization Artist, Men in Black III, Sony Pictures",
+          "detail": "The Third Floor Inc., Queens, NY"
+        },
+        {
+          "when": "2011",
+          "title": "Senior Previsualization Artist, The Avengers, Marvel",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2011",
+          "title": "Senior Previsualization Artist, Battleship, Universal / Hasbro",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2010",
+          "title": "Senior Previsualization Artist, Lost Planet 2, Capcom",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2010",
+          "title": "Senior Previsualization Artist, Thor, Marvel",
+          "detail": "The Third Floor Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2010",
+          "title": "Senior Previsualization Artist, Cats & Dogs 2: The Revenge of Kitty Galore, Universal Studios",
+          "detail": "Proof Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2010",
+          "title": "Senior Previsualization Artist, The Losers, Warner Brothers",
+          "detail": "Proof Inc., Los Angeles, CA"
+        },
+        {
+          "when": "2009",
+          "title": "Senior Previsualization Artist, The Tooth Fairy, Fox Features",
+          "detail": "Fox Cinedev, Los Angeles, CA"
+        },
+        {
+          "when": "2007 – 2008",
+          "title": "Senior Previsualization Artist, X-Men Origins: Wolverine, Fox Features",
+          "detail": "Fox Cinedev, Los Angeles, CA"
+        },
+        {
+          "when": "2007",
+          "title": "Animator, Empire Earth III, Sierra",
+          "detail": "Blur Studio, Los Angeles, CA"
+        },
+        {
+          "when": "2007",
+          "title": "Animator, Dumbo – Disney Consumer Products",
+          "detail": "Blur Studio, Los Angeles, CA"
+        },
+        {
+          "when": "2007",
+          "title": "Animator, Niagara’s Furry, Niagara Falls Tourism",
+          "detail": "Blur Studio, Los Angeles, CA"
+        },
+        {
+          "when": "2006",
+          "title": "Animator, Monster’s Inc. Laugh Floor, Disney Imagineering",
+          "detail": "3D Site, Topanga, CA"
+        },
+        {
+          "when": "2005 – 2006",
+          "title": "Animator, Monster House, Columbia Pictures",
+          "detail": "Sony Imageworks, Los Angeles, CA"
+        },
+        {
+          "when": "2004",
+          "title": "Animator, Untitled James Bond Video Game",
+          "detail": "Electronic Arts, Redwood Shores, CA"
+        },
+        {
+          "when": "2004",
+          "title": "Animator, The Lord of the Rings: The Third Age",
+          "detail": "Electronic Arts, Redwood Shores, CA"
+        },
+        {
+          "when": "2004",
+          "title": "Animator, Urbz, Sims in the City",
+          "detail": "Electronic Arts, Redwood Shores, CA"
+        },
+        {
+          "when": "2000 – 2001",
+          "title": "Digital Artist / Compositor, Celebrity Death Match",
+          "detail": "MTV Animation, New York, NY"
+        },
+        {
+          "when": "2000",
+          "title": "After Effects Animator, MTV Animation Development",
+          "detail": "MTV Animation, New York, NY"
+        },
+        {
+          "when": "2000",
+          "title": "Effects Artist, The Code – Independent Feature",
+          "detail": "New York, NY"
+        },
+        {
+          "when": "1998 – 1999",
+          "title": "Motion Graphics Artist, WNAC Fox Providence Television",
+          "detail": "Providence, RI"
+        }
+      ]
+    },
+    {
+      "heading": "Comic Writing and Development",
+      "entries": [
+        {
+          "when": "2008 –",
+          "title": "Nyetoon, Comic Blog",
+          "detail": "Los Angeles, CA"
+        },
+        {
+          "when": "2011",
+          "title": "The Sanity Index, Comic Blog",
+          "detail": "Los Angeles, CA"
+        },
+        {
+          "when": "2012",
+          "title": "The Interndimensional Adventures of Floyd and Norm, Comic Series",
+          "detail": "Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "heading": "Awards",
+      "entries": [
+        {
+          "when": "2004",
+          "title": "Magnetism, 1st Place Animation, Spring Show",
+          "detail": "Academy of Art University, 2004"
+        },
+        {
+          "when": "2004",
+          "title": "Magnetism, Best of Show, KidsEye Festival",
+          "detail": "Providence, RI"
+        }
+      ]
+    },
+    {
+      "heading": "Coursework",
+      "entries": [
+        {
+          "when": "1995",
+          "title": "Fine Arts / Photography / History",
+          "detail": "Temple University, Rome, Italy"
+        },
+        {
+          "when": "2003",
+          "title": "Richard Williams Animation Master Class",
+          "detail": "Viborg, Denmark"
+        },
+        {
+          "when": "1998",
+          "title": "CGI / Maya Training",
+          "detail": "Mesmer Animation Labs, Seattle, WA"
+        },
+        {
+          "when": "2006",
+          "title": "Screen Writing",
+          "detail": "University of California, Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "heading": "Other Activity",
+      "entries": [
+        {
+          "when": "1997 – 1998",
+          "title": "Improvisational Comedian, Polywumpus",
+          "detail": "Philadelphia, PA"
+        },
+        {
+          "when": "1995 – 1997",
+          "title": "Improvisational Comedian, Without a Net",
+          "detail": "University of Pennsylvania, Philadelphia, PA"
+        },
+        {
+          "when": "2001 – 2002",
+          "title": "Improvisational Comedian, Platypus Jones",
+          "detail": "San Francisco, CA"
+        },
+        {
+          "when": "1996",
+          "title": "Cartoonist, 34th Street Magazine",
+          "detail": "University of Pennsylvania, Philadelphia, PA"
+        },
+        {
+          "when": "1986 – 1989",
+          "title": "Actor, The Rhode Island Shakespeare Theater",
+          "detail": "Newport, RI"
+        }
+      ]
+    }
+  ]
+}

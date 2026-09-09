@@ -1,0 +1,29 @@
+{
+  "kicker": "Work",
+  "links": [
+    {
+      "label": "Paragraph",
+      "href": "https://paragraph.com/@nyewarburton.eth"
+    },
+    {
+      "label": "Substack",
+      "href": "https://nyewarburton.substack.com",
+      "hint": "Subscribe"
+    },
+    {
+      "label": "Writing",
+      "href": "/writing/",
+      "internal": true
+    },
+    {
+      "label": "CV",
+      "href": "/cv/",
+      "internal": true
+    },
+    {
+      "label": "Book",
+      "href": "https://nyewarburton.com/book/",
+      "optional": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import Writing from '../../sections/Writing.astro';
+import writing from '../../../content/writing.json';
+import site from '../../../content/site.json';
+import { loadEssays } from '../../lib/essays';
+
+const essays = loadEssays();
+---
+
+<BaseLayout title={writing.title} description={writing.description}>
+  <SiteNav />
+  <div class="page wrap">
+    <header class="page-head">
+      <h1>{writing.heading}</h1>
+      <p class="page-head__lead">{writing.intro}</p>
+    </header>
+    <Writing essays={essays} kicker="Essays" intro="" showSearch showDraftNote />
+    <footer class="site-footer">
+      <p>{site.name}</p>
+    </footer>
+  </div>
+</BaseLayout>
