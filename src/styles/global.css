@@ -327,9 +327,57 @@ p:last-child {
    ========================================================================== */
 
 .writing__intro,
-.writing__empty {
+.writing__empty,
+.writing__note {
   margin: 0 0 1.25rem;
   max-width: 32rem;
+}
+
+.writing__note {
+  font-size: 0.92rem;
+  color: var(--g-50);
+}
+
+.writing__badge {
+  display: inline-block;
+  margin-right: 0.45rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--g-80);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+
+.writing-search {
+  display: block;
+  margin: 0 0 1.25rem;
+}
+
+.writing-search__label {
+  display: block;
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--g-50);
+}
+
+.writing-search__input {
+  width: 100%;
+  max-width: 22rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--g-80);
+  border-radius: 0;
+  background: #fff;
+  color: var(--g-10);
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.writing-search__input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .writing-list {
@@ -387,6 +435,10 @@ p:last-child {
 
 .writing__links a {
   color: var(--accent-ink);
+}
+
+.writing__secondary {
+  color: var(--g-50);
 }
 
 /* CV

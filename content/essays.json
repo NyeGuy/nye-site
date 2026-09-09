@@ -1,0 +1,126 @@
+{
+  "draft": true,
+  "note": "Provisional DRAFT set until Nye names the essays. Real titles, dates, blurbs, and links from nyewarburton.com/writing and Paragraph only. Not a ranking.",
+  "essays": [
+    {
+      "title": "Artificial Intelligence: A Primer for graphics artists and educators",
+      "date": "2023",
+      "url": "https://nyewarburton.com/2023/06/30/artificial-intelligence-a-primer-for-graphics-artists-and-educators/",
+      "blurb": "A summation of my presentation given at Savannah College of Art and Design in the Spring of 2023."
+    },
+    {
+      "title": "To Teach or Not to Teach Artificial Intelligence",
+      "date": "2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/XXjQvIeQQ4dWyOkcs0qf-4U2aB3RoCRLW41eQFJFIeQ",
+      "blurb": "Can we open the debate in a way that best helps the students, and limits the potential for academic dishonesty?"
+    },
+    {
+      "title": "Protecting Artists from Centralized AI",
+      "date": "2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/GGucq3fr3POdYTzFtMzpy7ST0hICYFn2RK8BE_kViPM",
+      "blurb": "If we are to defend our creative data from being sucked into large centralized AI models, we may need a new ethos of behavior."
+    },
+    {
+      "title": "Discovering Disco Diffusion and Prompt Design",
+      "date": "2022-07",
+      "url": "https://nyewarburton.com/2022/07/15/discovering-disco-diffusion-and-prompt-design/",
+      "blurb": "Documenting my first couple of days with DiscoDiffusion (July 2022)."
+    },
+    {
+      "title": "Gamifying Reputation",
+      "date": "2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/iVOc6nkbPrWOK--bKctMpQZ9z7yBZKDnSkoEoA8w2ls",
+      "blurb": "We’ve spent a decade gamifying engagement in education, work and health."
+    },
+    {
+      "title": "Interoperable Storytelling",
+      "date": "2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/ED5M6MoSOhxaruT9rhW5Obpv6Rmjz-l4wkb3QeDH4lg",
+      "blurb": "The more modular our content becomes, the greater the potential for infinite, hyper-personal, storytelling."
+    },
+    {
+      "title": "Royalties, Attribution and the Blockchain",
+      "date": "2021 – 2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/ynbCEdF5ULWW_ph7wLH5az3h2eXL7cWVmcXqLxTu6nc",
+      "blurb": "Digital Artists are rarely rewarded with intellectual property ownership. The blockchain may provide an alternative."
+    },
+    {
+      "title": "AI University",
+      "date": "2022",
+      "url": "https://mirror.xyz/nyewarburton.eth/oLCJiyqUIC-UfvDi3i7VFzOCGgOcIXZjRUqb9OKtW90",
+      "blurb": "The three components of a persistent, credentialed, global education network."
+    },
+    {
+      "title": "Which Game Engine Should I Use?",
+      "date": "2020",
+      "url": "https://nyewarburton.com/2022/02/18/which-game-engine-should-i-use/",
+      "blurb": "By far, this is the most asked question I get. Here are my thoughts of the current engine world."
+    },
+    {
+      "title": "The Five Rules of Ghengis Kahn",
+      "date": "2021",
+      "url": "https://nyewarburton.com/2022/02/12/the-five-rules-of-genghis-kahn/",
+      "blurb": "A review and summation of a book about the greatest military strategist to ever live."
+    },
+    {
+      "title": "Seven Strategic Tactics for Teaching Online",
+      "date": "2021",
+      "url": "https://nyewarburton.com/2022/02/27/seven-strategic-tactics-for-teaching-online/",
+      "blurb": "An aggregation of findings after spending a year on zoom teaching college level computer graphics."
+    },
+    {
+      "title": "Iron Man, Agents & TechnoGuilt",
+      "date": "2026-09-06",
+      "url": "https://paragraph.com/@nyewarburton.eth/iron-man-agents-and-technoguilt",
+      "blurb": "My favorite super hero feels weirdly prophetic and why we probably should be careful with agents."
+    },
+    {
+      "title": "Fast and Slow",
+      "date": "2026-08-30",
+      "url": "https://paragraph.com/@nyewarburton.eth/fast-and-slow",
+      "blurb": "I wrote this essay by hand. It was painful and it took a lot of thinking. That's exactly the point."
+    },
+    {
+      "title": "Helmets and Violins",
+      "date": "2026-08-23",
+      "url": "https://paragraph.com/@nyewarburton.eth/helmets-and-violins",
+      "blurb": "This week I'm considering whether ten thousand hours still buys an artist anything, now that the machine hands you the loop for free."
+    },
+    {
+      "title": "The Power of a T-Shirt",
+      "date": "2026-08-16",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-power-of-a-t-shirt",
+      "blurb": "This week I am investing in the most powerful educational technology I know."
+    },
+    {
+      "title": "Could We Potluck AI?",
+      "date": "2026-08-09",
+      "url": "https://paragraph.com/@nyewarburton.eth/could-we-potluck-ai",
+      "blurb": "There has to be another way to get compute."
+    },
+    {
+      "title": "Does It Make You Faster, Or Just Busier?",
+      "date": "2026-08-02",
+      "url": "https://paragraph.com/@nyewarburton.eth/does-it-make-you-faster-or-just-busier",
+      "blurb": "I want to pick a fight with a word everyone's using and almost no one is defining: productive."
+    },
+    {
+      "title": "Learning From Zero",
+      "date": "2026-07-19",
+      "url": "https://paragraph.com/@nyewarburton.eth/learning-from-zero",
+      "blurb": "I'm starting from Zero... again."
+    },
+    {
+      "title": "The Recruiting Trap",
+      "date": "2026-05-31",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-recruiting-trap",
+      "blurb": "This year's distilled advice for the outgoing crop of creative graduates. Don't apply to jobs, solve problems."
+    },
+    {
+      "title": "I Don't Know",
+      "date": "2026-05-10",
+      "url": "https://paragraph.com/@nyewarburton.eth/i-dont-know",
+      "blurb": "This week I am admitting \"I don't know,\" and think education should start there."
+    }
+  ]
+}

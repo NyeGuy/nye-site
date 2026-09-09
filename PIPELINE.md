@@ -1,8 +1,8 @@
 # Nye site — dev pipeline
 
-Official GitHub Pages site for **Nye Warburton**. Static Astro. No CMS, no analytics, no webfonts, no runtime JavaScript.
+Official GitHub Pages site for **Nye Warburton**. Static Astro. No CMS, no analytics, no webfonts. Home, `/writing`, and `/cv` are static HTML. `/writing` ships a few lines of inline search JS over the curated essay set only.
 
-Home, `/writing`, and `/cv`. Writing titles are ingested from Paragraph RSS at **build time**. Essays are not mirrored.
+Home, `/writing`, and `/cv`. Writing is a curated link-out list in `content/essays.json`, not a full RSS dump. Essays are not mirrored.
 
 This is a **personal brand** track. Do not nest Satellite Lab content here.
 
@@ -44,7 +44,7 @@ Dev server: [http://localhost:4321/nye-site/](http://localhost:4321/nye-site/)
 npm run build
 ```
 
-Writes the static site to `dist/`. The build fetches `https://paragraph.com/@nyewarburton.eth/rss` and keeps title, date, url, and description. Full essay bodies are discarded.
+Writes the static site to `dist/`. Writing comes from `content/essays.json` (title, date, one-line blurb, url). Full essay bodies stay off-repo.
 
 ### npm scripts
 
@@ -53,7 +53,7 @@ Every script in `package.json`:
 | Script | Command | What it does |
 | --- | --- | --- |
 | `dev` | `astro dev` | Local dev server |
-| `build` | `astro build` | Production static build → `dist/` (includes RSS ingest) |
+| `build` | `astro build` | Production static build → `dist/` |
 | `preview` | `astro preview` | Serve `dist/` locally (run `build` first) |
 
 There are no other npm scripts.
@@ -92,7 +92,7 @@ Name: **Deploy to GitHub Pages**.
 
 There is **no** `pull_request` trigger and **no** PR preview environment. Opening a PR does not publish a preview URL. Do not treat Actions on a feature branch as a staging site: a manual run still deploys to the same `github-pages` environment.
 
-**Build job:** `actions/checkout@v7`, then [`withastro/action@v6`](https://github.com/withastro/action) (install, `astro build`, upload Pages artifact). The build host needs outbound HTTPS for the Paragraph RSS feed.
+**Build job:** `actions/checkout@v7`, then [`withastro/action@v6`](https://github.com/withastro/action) (install, `astro build`, upload Pages artifact).
 
 **Deploy job:** `actions/deploy-pages@v5` into the `github-pages` environment.
 
@@ -115,13 +115,14 @@ Pages will not publish until repo **Settings → Pages → Build and deployment 
 
 **Where editable content lives**
 
-Visitor-facing copy is in [`content/`](./content/). Components read those files; they do not hard-code body copy. Essay titles come from RSS at build time, not from `content/`.
+Visitor-facing copy is in [`content/`](./content/). Components read those files; they do not hard-code body copy.
 
 | Path | What it holds |
 | --- | --- |
 | `content/site.json` | Name, role, students line, lead, title, description |
 | `content/work.json` | Writing and publishing links |
-| `content/writing.json` | Writing index labels and Substack subscribe link |
+| `content/writing.json` | Writing index labels, Paragraph more-link, Substack subscribe |
+| `content/essays.json` | Curated draft essay set (title, date, blurb, url) |
 | `content/background.json` | Home background paragraphs |
 | `content/cv.json` | Public CV (Dean of STEC for present) |
 | `content/ethos.json` | Ethos lines and closing line |
@@ -138,4 +139,5 @@ Do not touch:
 - **nye-site-play** deploy target (Vercel). Official Pages stays here.
 - **CMS**, analytics, or CDN webfonts
 - **Invented CV**, freelance availability, logos, or photographs
-- **Full-text essay mirrors** (link out to Paragraph)
+- **Full-text essay mirrors** or a full Paragraph RSS dump as the primary list
+- **Invented essay titles or rankings** — edit `content/essays.json` with real public links only

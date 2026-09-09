@@ -8,16 +8,16 @@ import Background from '../sections/Background.astro';
 import Ethos from '../sections/Ethos.astro';
 import site from '../../content/site.json';
 import writing from '../../content/writing.json';
-import { getParagraphPosts } from '../lib/paragraph';
+import { recentEssays } from '../lib/essays';
 
-const posts = await getParagraphPosts();
+const essays = recentEssays(writing.homeCount);
 ---
 
 <BaseLayout>
   <SiteNav />
   <div class="page wrap">
     <Hero />
-    <Writing posts={posts} limit={writing.homeCount} showAllLink />
+    <Writing essays={essays} showAllLink />
     <Work />
     <Background />
     <Ethos />

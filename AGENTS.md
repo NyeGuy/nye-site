@@ -14,6 +14,6 @@ Editable copy lives in [`content/`](./content/). Prefer editing those files over
 - **No invented CV.** Home background and `/cv` come from the public CV at https://nyewarburton.com/cv-2/ only, plus the approved STEC title. Present role is **Dean of STEC at SCAD** (the source page may still say Chair, ITGM). Credits and employers only as listed on that page. Do not invent titles, studios, years, or availability.
 - **No freelance ask.** Never add “available for freelance” or similar.
 - **Exact ethos.** Keep the four lines in `content/ethos.json` verbatim, including “Make it Happen.”
-- **Writing is a link-out index.** Build-time Paragraph RSS (`https://paragraph.com/@nyewarburton.eth/rss`) supplies title, date, url, and description only. Do not mirror full essays. Substack is a subscribe link.
+- **Writing is a curated link-out index.** About 20 essays in `content/essays.json` (title, date, one-line blurb, url). Until Nye names the set, keep `"draft": true` and do not invent titles, rankings, or blurbs. Use real links from https://nyewarburton.com/writing/ and Paragraph only. Do not ship a full RSS dump as the primary list. More writing lives on Paragraph; Substack is a subscribe link.
 - **No invented marks.** No logo, no photographs. System fonts only. No analytics or CDN webfonts.
 - **Grey first.** Grey palette. Any accent must stay quieter than Satellite Lab dusty gold.
