@@ -279,11 +279,9 @@ p:last-child {
   border-top: 1px solid var(--accent);
   width: max-content;
   max-width: 100%;
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-style: italic;
   color: var(--accent-ink);
 }
 
