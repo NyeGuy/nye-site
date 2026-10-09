@@ -226,22 +226,17 @@ p:last-child {
 
 .page--home {
   padding-top: clamp(2rem, 6vw, 3.5rem);
+  text-align: center;
 }
 
 .page--home > * + * {
-  margin-top: clamp(1.75rem, 5vw, 2.75rem);
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.35rem;
+  margin-top: clamp(1.5rem, 4vw, 2.25rem);
 }
 
 .hero__identity {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
 }
@@ -261,8 +256,23 @@ p:last-child {
 }
 
 .home-photo {
+  margin: 0 auto;
+  width: min(78%, 17.2rem);
+}
+
+.home-subtitle {
   margin: 0;
-  width: min(100%, 22rem);
+  font-size: 1.05rem;
+  color: var(--g-22);
+}
+
+.home-lead {
+  margin: 0 auto;
+  max-width: 22rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2.6vw, 1.35rem);
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .home-photo picture,
@@ -289,7 +299,7 @@ p:last-child {
 .home-links__item {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   padding: 0.85rem 0;
   font-family: var(--font-heading);
@@ -837,8 +847,17 @@ a.home-links__item:focus-visible {
   color: var(--accent-ink);
 }
 
+.page--home .ethos-list li {
+  margin-inline: auto;
+}
+
 .page--home .ethos__close {
-  margin-top: 0;
+  margin-top: 1.6rem;
+  margin-inline: auto;
+}
+
+.page--home .site-footer {
+  padding: 0;
 }
 
 /* Footer
