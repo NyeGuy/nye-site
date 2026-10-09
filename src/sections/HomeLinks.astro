@@ -11,10 +11,7 @@ const links = home.links;
       links.map((link) => (
         <li>
           {link.soon ? (
-            <span class="home-links__item home-links__item--soon">
-              <span>{link.label}</span>
-              <span class="home-links__soon">(soon)</span>
-            </span>
+            <span class="home-links__item home-links__item--soon">{link.label}</span>
           ) : (
             <a
               class="home-links__item"

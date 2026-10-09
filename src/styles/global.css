@@ -307,13 +307,6 @@ a.home-links__item:focus-visible {
   color: var(--g-50);
 }
 
-.home-links__soon {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  color: var(--g-50);
-}
-
 /* Work
    ========================================================================== */
 
