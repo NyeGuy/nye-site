@@ -1,24 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SiteNav from '../components/SiteNav.astro';
 import Hero from '../sections/Hero.astro';
-import TopPosts from '../sections/TopPosts.astro';
-import Work from '../sections/Work.astro';
-import Background from '../sections/Background.astro';
 import Ethos from '../sections/Ethos.astro';
-import site from '../../content/site.json';
+import HomeLinks from '../sections/HomeLinks.astro';
 ---
 
 <BaseLayout>
-  <SiteNav />
-  <div class="page wrap">
+  <div class="page page--home wrap">
     <Hero />
-    <TopPosts />
-    <Work />
-    <Background />
-    <Ethos />
-    <footer class="site-footer">
-      <p>{site.name}</p>
-    </footer>
+    <Ethos showKicker={false} lines={[]} />
+    <HomeLinks />
   </div>
 </BaseLayout>

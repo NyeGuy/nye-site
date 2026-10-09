@@ -5,17 +5,23 @@ interface Props {
   kicker?: string;
   lines?: string[];
   close?: string;
+  showKicker?: boolean;
 }
 
 const kicker = Astro.props.kicker ?? ethos.kicker;
 const lines = Astro.props.lines ?? ethos.lines;
 const close = Astro.props.close ?? ethos.close;
+const showKicker = Astro.props.showKicker ?? true;
 ---
 
-<section class="ethos" id="ethos" aria-labelledby="ethos-heading">
-  <h2 class="kicker" id="ethos-heading">{kicker}</h2>
-  <ul class="ethos-list">
-    {lines.map((line) => <li>{line}</li>)}
-  </ul>
+<section class="ethos" id="ethos" aria-label={kicker}>
+  {showKicker && <h2 class="kicker" id="ethos-heading">{kicker}</h2>}
+  {
+    lines.length > 0 && (
+      <ul class="ethos-list">
+        {lines.map((line) => <li>{line}</li>)}
+      </ul>
+    )
+  }
   <p class="ethos__close">{close}</p>
 </section>

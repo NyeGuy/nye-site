@@ -1,0 +1,31 @@
+---
+import home from '../../content/home.json';
+import { withBase } from '../lib/paths';
+
+const links = home.links;
+---
+
+<nav class="home-links" aria-label="Site">
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          {link.soon ? (
+            <span class="home-links__item home-links__item--soon">
+              <span>{link.label}</span>
+              <span class="home-links__soon">(soon)</span>
+            </span>
+          ) : (
+            <a
+              class="home-links__item"
+              href={link.internal ? withBase(link.href) : link.href}
+              rel={link.internal ? undefined : 'noopener noreferrer'}
+            >
+              <span>{link.label}</span>
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</nav>

@@ -1,0 +1,22 @@
+{
+  "links": [
+    {
+      "label": "Writing",
+      "href": "/writing/",
+      "internal": true,
+      "soon": false
+    },
+    {
+      "label": "Books",
+      "href": "https://nyewarburton.com/book/",
+      "internal": false,
+      "soon": false
+    },
+    {
+      "label": "CV",
+      "href": "",
+      "internal": false,
+      "soon": true
+    }
+  ]
+}
