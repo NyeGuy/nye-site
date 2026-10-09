@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../sections/Hero.astro';
+import Ethos from '../sections/Ethos.astro';
+import HomeLinks from '../sections/HomeLinks.astro';
+import site from '../../content/site.json';
+---
+
+<BaseLayout>
+  <div class="page page--home wrap">
+    <Hero />
+    <div class="home-intro">
+      <p class="home-subtitle">{site.subtitle}</p>
+      <p class="home-lead">{site.lead}</p>
+    </div>
+    <Ethos showKicker={false} />
+    <HomeLinks />
+  </div>
+</BaseLayout>

@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../../content/site.json';
+import { getPost, loadPosts } from '../../lib/posts';
+import { renderEssayHtml } from '../../lib/sanitize-essay.mjs';
+import { withBase } from '../../lib/paths';
+
+export function getStaticPaths() {
+  return loadPosts().map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const post = getPost(Astro.params.slug ?? '');
+if (!post) {
+  throw new Error(`Missing essay: ${Astro.params.slug}`);
+}
+
+const html = renderEssayHtml(post);
+const writingHref = withBase('writing/');
+---
+
+<BaseLayout title={`${post.title} – Nye Warburton`} description={post.excerpt || post.subtitle || site.description}>
+  <div class="page page--essay wrap">
+    <article class="essay">
+      <header class="essay__header">
+        <p class="essay__back"><a href={writingHref}>All writing</a></p>
+        <h1>{post.title}</h1>
+        <p class="essay__meta">
+          <time datetime={post.date}>{post.dateLabel}</time>
+        </p>
+        {post.subtitle && <p class="essay__dek">{post.subtitle}</p>}
+      </header>
+      <div class="essay__body" set:html={html} />
+      <p class="essay__original">
+        <a href={post.url} rel="noopener noreferrer">Original on Paragraph</a>
+      </p>
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Writing from '../../sections/Writing.astro';
+import WritingArchive from '../../sections/WritingArchive.astro';
+import writing from '../../../content/writing.json';
+import { loadEssays } from '../../lib/essays';
+import { loadPosts } from '../../lib/posts';
+
+const posts = loadPosts();
+const archiveTitles = new Set(posts.map((post) => post.title.toLowerCase()));
+const earlier = loadEssays().filter((essay) => !archiveTitles.has(essay.title.toLowerCase()));
+---
+
+<BaseLayout title={writing.title} description={writing.description}>
+  <div class="page page--writing wrap">
+    <WritingArchive posts={posts} />
+    {
+      earlier.length > 0 && (
+        <Writing
+          essays={earlier}
+          kicker={writing.earlierKicker}
+          intro={writing.earlierNote}
+          headingId="earlier-heading"
+          sectionId="earlier"
+        />
+      )
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,21 @@
+{
+  "kicker": "Writing",
+  "heading": "Writing",
+  "title": "Writing – Nye Warburton",
+  "description": "Essays from Nye’s Digital Lab. Search the archive and read each essay on this site.",
+  "intro": "One hundred essays from Nye’s Digital Lab. Search the title and the full text, then read them here.",
+  "homeCount": 5,
+  "allLabel": "All writing",
+  "feedLabel": "Publication on Paragraph",
+  "feedHref": "https://paragraph.com/@nyewarburton.eth",
+  "subscribeLabel": "Subscribe on Substack",
+  "subscribeHref": "https://nyewarburton.substack.com",
+  "empty": "No essays in this snapshot.",
+  "sourceNote": "Read on this site. The text is fetched from Paragraph when the site is built. A snapshot in the repo is the fallback if that API is down.",
+  "searchLabel": "Search titles and full text",
+  "searchPlaceholder": "Search essays",
+  "searchEmpty": "No essays match that search.",
+  "draftBadge": "Archive",
+  "earlierKicker": "Earlier selected essays",
+  "earlierNote": "From the public writing page and Mirror. Not in the Digital Lab archive, so they stay linked out."
+}

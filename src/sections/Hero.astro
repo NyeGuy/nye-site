@@ -1,0 +1,28 @@
+---
+import site from '../../content/site.json';
+import { withBase } from '../lib/paths';
+
+interface Props {
+  name?: string;
+}
+
+const { name = site.name } = Astro.props;
+const mark = withBase(site.mark);
+const photo = withBase(site.photo);
+const photoWebp = withBase(site.photoWebp);
+const photoAvif = withBase(site.photoAvif);
+---
+
+<header class="hero" aria-labelledby="hero-heading">
+  <img class="hero__mark" src={mark} width="512" height="512" alt={site.markAlt} />
+  <div class="hero__copy">
+    <h1 id="hero-heading">{name}</h1>
+    <figure class="home-photo">
+      <picture>
+        <source srcset={photoAvif} type="image/avif" width={site.photoWidth} height={site.photoHeight} />
+        <source srcset={photoWebp} type="image/webp" width={site.photoWidth} height={site.photoHeight} />
+        <img src={photo} width={site.photoWidth} height={site.photoHeight} alt={site.photoAlt} />
+      </picture>
+    </figure>
+  </div>
+</header>

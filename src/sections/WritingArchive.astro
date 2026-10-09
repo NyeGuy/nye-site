@@ -1,0 +1,151 @@
+---
+import writing from '../../content/writing.json';
+import { withBase } from '../lib/paths';
+import type { Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+}
+
+const posts = Astro.props.posts;
+
+function dateTime(value: string): string | undefined {
+  return /^\d{4}-\d{2}-\d{2}/.test(value) ? value.slice(0, 10) : undefined;
+}
+---
+
+<section class="writing" id="writing" aria-labelledby="writing-heading">
+  <h2 class="kicker" id="writing-heading">{writing.heading}</h2>
+  <p class="writing__intro">{writing.intro}</p>
+  <p class="writing__note">{writing.sourceNote}</p>
+
+  <form class="writing-search" role="search" id="writing-search-form">
+    <label class="writing-search__label" for="writing-q">{writing.searchLabel}</label>
+    <input
+      class="writing-search__input"
+      type="search"
+      id="writing-q"
+      name="q"
+      placeholder={writing.searchPlaceholder}
+      autocomplete="off"
+      spellcheck="false"
+    />
+  </form>
+  <p class="writing__count" id="writing-count" aria-live="polite">{posts.length} essays</p>
+
+  <ul class="writing-list" id="writing-list">
+    {
+      posts.map((post) => (
+        <li data-slug={post.slug} data-excerpt={post.excerpt}>
+          <article class="writing-item">
+            <time datetime={dateTime(post.date)}>{post.dateLabel}</time>
+            <h3>
+              <a href={withBase(`writing/${post.slug}/`)}>{post.title}</a>
+            </h3>
+            {post.excerpt && <p class="writing-item__blurb">{post.excerpt}</p>}
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="writing__empty" id="writing-none" hidden>{writing.searchEmpty}</p>
+
+  <p class="writing__links">
+    <a href={writing.feedHref} rel="noopener noreferrer">{writing.feedLabel}</a>
+    <a class="writing__secondary" href={writing.subscribeHref} rel="noopener noreferrer">
+      {writing.subscribeLabel}
+    </a>
+  </p>
+</section>
+
+<script>
+  import MiniSearch from 'minisearch';
+  import docs from '../../content/writing-search.json';
+
+  const input = document.getElementById('writing-q') as HTMLInputElement | null;
+  const form = document.getElementById('writing-search-form');
+  const list = document.getElementById('writing-list');
+  const none = document.getElementById('writing-none');
+  const count = document.getElementById('writing-count');
+  if (input && list && docs.length) {
+    const items = Array.from(list.querySelectorAll('li'));
+    const original = items.slice();
+    const bySlug = new Map(items.map((li) => [li.dataset.slug || '', li]));
+    const textBySlug = new Map(docs.map((doc) => [doc.slug, doc.text]));
+    const mini = new MiniSearch({
+      idField: 'id',
+      fields: ['title', 'text'],
+      storeFields: ['slug'],
+    });
+    mini.addAll(docs);
+
+    const render = (query: string) => {
+      const needle = query.trim();
+      if (!needle) {
+        original.forEach((li) => {
+          li.hidden = false;
+          const blurb = li.querySelector('.writing-item__blurb');
+          if (blurb) blurb.textContent = li.dataset.excerpt || '';
+          list.appendChild(li);
+        });
+        if (count) count.textContent = `${original.length} essays`;
+        if (none) none.hidden = true;
+        return;
+      }
+
+      const hits = mini.search(needle, {
+        fields: ['title', 'text'],
+        boost: { title: 4 },
+        prefix: true,
+        combineWith: 'AND',
+      });
+      const seen = new Set<string>();
+      hits.forEach((hit) => {
+        const slug = String(hit.id);
+        const li = bySlug.get(slug);
+        if (!li) return;
+        seen.add(slug);
+        li.hidden = false;
+        const blurb = li.querySelector('.writing-item__blurb');
+        const text = textBySlug.get(slug) || '';
+        if (blurb) blurb.textContent = snippet(text, needle);
+        list.appendChild(li);
+      });
+      original.forEach((li) => {
+        const slug = li.dataset.slug || '';
+        if (seen.has(slug)) return;
+        li.hidden = true;
+        list.appendChild(li);
+      });
+      if (count) count.textContent = `${seen.size} ${seen.size === 1 ? 'match' : 'matches'}`;
+      if (none) none.hidden = seen.size !== 0;
+    };
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      render(input.value);
+    });
+    input.addEventListener('input', () => render(input.value));
+    const preset = new URLSearchParams(window.location.search).get('q');
+    if (preset) {
+      input.value = preset;
+      render(preset);
+    }
+  }
+
+  function snippet(text: string, query: string): string {
+    const terms = query.toLowerCase().split(/\s+/).filter((term) => term.length > 1);
+    const lower = text.toLowerCase();
+    let at = -1;
+    terms.forEach((term) => {
+      const index = lower.indexOf(term);
+      if (index !== -1 && (at === -1 || index < at)) at = index;
+    });
+    if (at < 0) return text.slice(0, 180);
+    const start = Math.max(0, at - 70);
+    const slice = text.slice(start, start + 200).trim();
+    const lead = start > 0 ? '…' : '';
+    const tail = start + 200 < text.length ? '…' : '';
+    return `${lead}${slice}${tail}`;
+  }
+</script>

@@ -1,0 +1,127 @@
+---
+import writing from '../../content/writing.json';
+import catalog from '../../content/essays.json';
+import type { Essay } from '../lib/essays';
+import { withBase } from '../lib/paths';
+
+interface Props {
+  essays: Essay[];
+  kicker?: string;
+  intro?: string;
+  showAllLink?: boolean;
+  showSearch?: boolean;
+  showDraftNote?: boolean;
+  headingId?: string;
+  sectionId?: string;
+}
+
+const kicker = Astro.props.kicker ?? writing.kicker;
+const intro = Astro.props.intro ?? writing.intro;
+const essays = Astro.props.essays;
+const showAllLink = Astro.props.showAllLink ?? false;
+const showSearch = Astro.props.showSearch ?? false;
+const showDraftNote = Astro.props.showDraftNote ?? false;
+const headingId = Astro.props.headingId ?? 'writing-heading';
+const sectionId = Astro.props.sectionId ?? 'writing';
+
+function dateTime(value: string): string | undefined {
+  return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : undefined;
+}
+---
+
+<section class="writing" id={sectionId} aria-labelledby={headingId}>
+  <h2 class="kicker" id={headingId}>{kicker}</h2>
+  {intro && <p class="writing__intro">{intro}</p>}
+  {
+    showDraftNote && catalog.draft && (
+      <p class="writing__note">
+        <span class="writing__badge">{writing.draftBadge}</span>
+        {writing.sourceNote}
+      </p>
+    )
+  }
+
+  {
+    showSearch && (
+      <label class="writing-search">
+        <span class="writing-search__label">{writing.searchLabel}</span>
+        <input
+          class="writing-search__input"
+          type="search"
+          id="writing-q"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </label>
+    )
+  }
+
+  {
+    essays.length === 0 ? (
+      <p class="writing__empty">
+        {writing.empty}{' '}
+        <a href={writing.feedHref} rel="noopener noreferrer">
+          {writing.feedLabel}
+        </a>
+      </p>
+    ) : (
+      <ul class="writing-list" id="writing-list">
+        {essays.map((essay) => (
+          <li data-search={essay.searchText}>
+            <article class="writing-item">
+              <time datetime={dateTime(essay.date)}>
+                {essay.dateLabel}
+              </time>
+              <h3>
+                <a href={essay.url} rel="noopener noreferrer">
+                  {essay.title}
+                </a>
+              </h3>
+              {essay.blurb && <p>{essay.blurb}</p>}
+            </article>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {showSearch && <p class="writing__empty" id="writing-none" hidden>{writing.searchEmpty}</p>}
+
+  <p class="writing__links">
+    {
+      showAllLink && (
+        <a class="writing__more" href={withBase('writing/')}>
+          {writing.allLabel}
+        </a>
+      )
+    }
+    <a href={writing.feedHref} rel="noopener noreferrer">{writing.feedLabel}</a>
+    <a class="writing__secondary" href={writing.subscribeHref} rel="noopener noreferrer">
+      {writing.subscribeLabel}
+    </a>
+  </p>
+</section>
+
+{
+  showSearch && (
+    <script is:inline>
+      (function () {
+        var input = document.getElementById('writing-q');
+        var none = document.getElementById('writing-none');
+        var list = document.getElementById('writing-list');
+        if (!input || !list) return;
+        var items = list.querySelectorAll('li');
+        input.addEventListener('input', function () {
+          var needle = input.value.trim().toLowerCase();
+          var shown = 0;
+          for (var i = 0; i < items.length; i++) {
+            var hit = !needle || (items[i].getAttribute('data-search') || '').indexOf(needle) !== -1;
+            items[i].hidden = !hit;
+            if (hit) shown += 1;
+          }
+          if (none) none.hidden = shown !== 0;
+        });
+      })();
+    </script>
+  )
+}
