@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 
-// Project Pages: https://nyeguy.github.io/nye-site/
-// For a user site (nyeguy.github.io), set site to that URL and drop `base`.
+// GitHub project Pages keeps /nye-site/. A Vercel build (VERCEL=1) is served at /.
+const onVercel = process.env.VERCEL === '1';
+const vercelHost = process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL;
+
 export default defineConfig({
-  site: 'https://nyeguy.github.io',
-  base: '/nye-site',
+  site: onVercel && vercelHost ? `https://${vercelHost}` : 'https://nyeguy.github.io',
+  base: onVercel ? '/' : '/nye-site',
   output: 'static',
   trailingSlash: 'always',
   // Lets a public preview host reach `astro preview`. Does not change the Pages build.

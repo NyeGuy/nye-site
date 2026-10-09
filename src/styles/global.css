@@ -546,9 +546,20 @@ p:last-child {
   color: var(--g-22);
 }
 
-.cv-entry--flagged {
-  box-shadow: inset 2px 0 0 var(--accent);
-  padding-left: 0.75rem;
+.cv-upcoming {
+  display: inline-block;
+  margin-left: 0.55rem;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--g-22);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  vertical-align: 0.15em;
+  color: var(--g-10);
 }
 
 .cv-flag {

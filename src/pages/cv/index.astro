@@ -3,16 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import cv from '../../../content/cv.json';
 import site from '../../../content/site.json';
-
-const flagged = cv.sections.flatMap((section) =>
-  section.entries
-    .filter((entry) => 'flag' in entry && entry.flag)
-    .map((entry) => ({
-      section: section.heading,
-      title: entry.title,
-      flag: entry.flag,
-    })),
-);
 ---
 
 <BaseLayout title={cv.title} description={cv.description}>
@@ -27,32 +17,10 @@ const flagged = cv.sections.flatMap((section) =>
     <section class="cv-intro" aria-label="Summary">
       {cv.intro.map((paragraph) => <p>{paragraph}</p>)}
       <p class="cv-source">
-        Sourced from the
-        <a href={cv.sourceHref} rel="noopener noreferrer">{cv.sourceLabel}</a>.
-        {cv.presentNote}
+        <a href="https://www.scad.edu/academics/faculty/nye-warburton" rel="noopener noreferrer">SCAD</a>
+        ·
+        <a href={cv.sourceHref} rel="noopener noreferrer">{cv.sourceLabel}</a>
       </p>
-      {cv.introFlag && <p class="cv-flag"><span class="cv-flag__label">Flagged</span> {cv.introFlag}</p>}
-    </section>
-
-    <section class="cv-review" aria-labelledby="cv-flags">
-      <h2 class="kicker" id="cv-flags">Flagged for review</h2>
-      <p class="writing__note">Printed as on the public CV, except the present title. Nothing here was silently corrected.</p>
-      <ol class="cv-review__list">
-        <li>
-          <p class="cv-entry__title">Intro</p>
-          <p class="cv-flag">{cv.introFlag}</p>
-        </li>
-        {
-          flagged.map((item) => (
-            <li>
-              <p class="cv-entry__title">
-                {item.section}: {item.title}
-              </p>
-              <p class="cv-flag">{item.flag}</p>
-            </li>
-          ))
-        }
-      </ol>
     </section>
 
     {
@@ -63,16 +31,14 @@ const flagged = cv.sections.flatMap((section) =>
           </h2>
           <ul class="cv-list">
             {section.entries.map((entry) => (
-              <li class:list={['cv-entry', { 'cv-entry--flagged': 'flag' in entry && entry.flag }]}>
+              <li class="cv-entry">
                 <p class="cv-entry__when">{entry.when}</p>
                 <div>
-                  <p class="cv-entry__title">{entry.title}</p>
+                  <p class="cv-entry__title">
+                    {entry.title}
+                    {entry.upcoming && <span class="cv-upcoming">Upcoming</span>}
+                  </p>
                   {entry.detail && <p class="cv-entry__detail">{entry.detail}</p>}
-                  {'flag' in entry && entry.flag && (
-                    <p class="cv-flag">
-                      <span class="cv-flag__label">Flagged</span> {entry.flag}
-                    </p>
-                  )}
                 </div>
               </li>
             ))}
