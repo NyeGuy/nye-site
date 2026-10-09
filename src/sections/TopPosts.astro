@@ -1,0 +1,98 @@
+---
+import top from '../../content/top-posts.json';
+import writing from '../../content/writing.json';
+import { topPosts } from '../lib/posts';
+import { withBase } from '../lib/paths';
+
+const posts = topPosts();
+const mostPopular = posts.filter((post) => post.group === 'digital-lab');
+const newest = posts.filter((post) => post.group === 'newest');
+const earlier = posts.filter((post) => post.group === 'earlier-publication');
+
+function dateTime(value: string): string | undefined {
+  return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : undefined;
+}
+---
+
+<section class="writing" id="top-posts" aria-labelledby="top-posts-heading">
+  <h2 class="kicker" id="top-posts-heading">Top posts</h2>
+  <p class="writing__intro">{top.methodology}</p>
+
+  <h3 class="top-posts__label">Most popular</h3>
+  <p class="writing__note">Paragraph’s widget on Nye’s Digital Lab, in that order.</p>
+  <ul class="writing-list">
+    {
+      mostPopular.map((post) => (
+        <li>
+          <article class="writing-item">
+            <p class="writing-item__meta">
+              <span class="writing__badge">Most popular</span>
+              <time datetime={dateTime(post.date)}>{post.dateLabel}</time>
+            </p>
+            <h3>
+              <a href={post.url} rel="noopener noreferrer">
+                {post.title}
+              </a>
+            </h3>
+            {post.excerpt && <p>{post.excerpt}</p>}
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h3 class="top-posts__label">Proposals</h3>
+  <p class="writing__note">Not a Paragraph ranking.</p>
+  <ul class="writing-list">
+    {
+      newest.map((post) => (
+        <li>
+          <article class="writing-item">
+            <p class="writing-item__meta">
+              <span class="writing__badge">Proposal</span>
+              <time datetime={dateTime(post.date)}>{post.dateLabel}</time>
+            </p>
+            <h3>
+              <a href={post.url} rel="noopener noreferrer">
+                {post.title}
+              </a>
+            </h3>
+            {post.excerpt && <p>{post.excerpt}</p>}
+            <p class="writing__note">Newest essay in the archive. The Most popular widget does not include it.</p>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="writing__note top-posts__sub">
+    Also Most popular on the earlier Paragraph publication, and not on the Digital Lab widget.
+  </p>
+  <ul class="writing-list">
+    {
+      earlier.map((post) => (
+        <li>
+          <article class="writing-item">
+            <p class="writing-item__meta">
+              <span class="writing__badge">Proposal</span>
+              <time datetime={dateTime(post.date)}>{post.dateLabel}</time>
+            </p>
+            <h3>
+              <a href={post.url} rel="noopener noreferrer">
+                {post.title}
+              </a>
+            </h3>
+            {post.excerpt && <p>{post.excerpt}</p>}
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+
+  <p class="writing__links">
+    <a class="writing__more" href={withBase('writing/')}>{writing.allLabel}</a>
+    <a href={writing.feedHref} rel="noopener noreferrer">{writing.feedLabel}</a>
+    <a class="writing__secondary" href={writing.subscribeHref} rel="noopener noreferrer">
+      {writing.subscribeLabel}
+    </a>
+  </p>
+</section>

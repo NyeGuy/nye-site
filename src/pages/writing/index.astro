@@ -5,8 +5,11 @@ import Writing from '../../sections/Writing.astro';
 import writing from '../../../content/writing.json';
 import site from '../../../content/site.json';
 import { loadEssays } from '../../lib/essays';
+import { loadPosts } from '../../lib/posts';
 
-const essays = loadEssays();
+const posts = loadPosts();
+const archiveTitles = new Set(posts.map((post) => post.title.toLowerCase()));
+const earlier = loadEssays().filter((essay) => !archiveTitles.has(essay.title.toLowerCase()));
 ---
 
 <BaseLayout title={writing.title} description={writing.description}>
@@ -16,7 +19,25 @@ const essays = loadEssays();
       <h1>{writing.heading}</h1>
       <p class="page-head__lead">{writing.intro}</p>
     </header>
-    <Writing essays={essays} kicker="Essays" intro="" showSearch showDraftNote />
+    <Writing
+      essays={posts.map((post) => ({
+        title: post.title,
+        date: post.date,
+        dateLabel: post.dateLabel,
+        url: post.url,
+        blurb: post.excerpt,
+        searchText: post.searchText,
+      }))}
+      kicker="Archive"
+      intro=""
+      showSearch
+      showDraftNote
+    />
+    {
+      earlier.length > 0 && (
+        <Writing essays={earlier} kicker={writing.earlierKicker} intro={writing.earlierNote} />
+      )
+    }
     <footer class="site-footer">
       <p>{site.name}</p>
     </footer>

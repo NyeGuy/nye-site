@@ -1,0 +1,709 @@
+{
+  "source": "https://paragraph.com/@nyewarburton.eth",
+  "rss": "https://api.paragraph.com/blogs/rss/@nyewarburton.eth",
+  "fetchedAt": "2026-10-09",
+  "count": 100,
+  "note": "Fallback snapshot of every post on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth). The publication RSS returns only the latest 20 items, so the site reads this file. Excerpts are the card blurbs, whitespace-normalized and trimmed. Not a full-text mirror.",
+  "posts": [
+    {
+      "title": "I Got 99 Essays, But a Throughline Ain't One",
+      "slug": "i-got-99-essays-but-a-throughline-aint-one",
+      "url": "https://paragraph.com/@nyewarburton.eth/i-got-99-essays-but-a-throughline-aint-one",
+      "publishedAt": "2026-10-04",
+      "excerpt": "This week I'm reading myself. I have carefully avoided doing that for three years and 129,000 words."
+    },
+    {
+      "title": "The Cost Collapse",
+      "slug": "the-cost-collapse",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-cost-collapse",
+      "publishedAt": "2026-09-27",
+      "excerpt": "When the shot costs nothing, the value moves to whoever people trust to pick the shot."
+    },
+    {
+      "title": "Merge Before You're Merged",
+      "slug": "merge-before-youre-merged",
+      "url": "https://paragraph.com/@nyewarburton.eth/merge-before-youre-merged",
+      "publishedAt": "2026-09-20",
+      "excerpt": "This week I'm considering what happens when the academic disciplines collapse into each other, and whether a school can (and should) choose the terms."
+    },
+    {
+      "title": "Anxiety and Vigilance",
+      "slug": "anxiety-and-vigilance",
+      "url": "https://paragraph.com/@nyewarburton.eth/anxiety-and-vigilance",
+      "publishedAt": "2026-09-13",
+      "excerpt": "Anxiety is noise. Vigilance is focus. We need vigilance."
+    },
+    {
+      "title": "Iron Man, Agents & TechnoGuilt",
+      "slug": "iron-man-agents-and-technoguilt",
+      "url": "https://paragraph.com/@nyewarburton.eth/iron-man-agents-and-technoguilt",
+      "publishedAt": "2026-09-06",
+      "excerpt": "My favorite super hero feels weirdly prophetic and why we probably should be careful with agents."
+    },
+    {
+      "title": "Fast and Slow",
+      "slug": "fast-and-slow",
+      "url": "https://paragraph.com/@nyewarburton.eth/fast-and-slow",
+      "publishedAt": "2026-08-30",
+      "excerpt": "I wrote this essay by hand. It was painful and it took a lot of thinking. That's exactly the point."
+    },
+    {
+      "title": "Helmets and Violins",
+      "slug": "helmets-and-violins",
+      "url": "https://paragraph.com/@nyewarburton.eth/helmets-and-violins",
+      "publishedAt": "2026-08-23",
+      "excerpt": "This week I'm considering whether ten thousand hours still buys an artist anything, now that the machine hands you the loop for free."
+    },
+    {
+      "title": "The Power of a T-Shirt",
+      "slug": "the-power-of-a-t-shirt",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-power-of-a-t-shirt",
+      "publishedAt": "2026-08-16",
+      "excerpt": "This week I am investing in the most powerful educational technology I know."
+    },
+    {
+      "title": "Could We Potluck AI?",
+      "slug": "could-we-potluck-ai",
+      "url": "https://paragraph.com/@nyewarburton.eth/could-we-potluck-ai",
+      "publishedAt": "2026-08-09",
+      "excerpt": "There has to be another way to get compute."
+    },
+    {
+      "title": "Does It Make You Faster, Or Just Busier?",
+      "slug": "does-it-make-you-faster-or-just-busier",
+      "url": "https://paragraph.com/@nyewarburton.eth/does-it-make-you-faster-or-just-busier",
+      "publishedAt": "2026-08-02",
+      "excerpt": "I want to pick a fight with a word everyone's using and almost no one is defining: productive."
+    },
+    {
+      "title": "A New Kinetic Computing Platform?",
+      "slug": "a-new-kinetic-computing-platform",
+      "url": "https://paragraph.com/@nyewarburton.eth/a-new-kinetic-computing-platform",
+      "publishedAt": "2026-07-26",
+      "excerpt": "Robots are a new computing paradigm and with AI, they will be easy to create behaviors as opening photoshop."
+    },
+    {
+      "title": "Learning From Zero",
+      "slug": "learning-from-zero",
+      "url": "https://paragraph.com/@nyewarburton.eth/learning-from-zero",
+      "publishedAt": "2026-07-19",
+      "excerpt": "I'm starting from Zero... again."
+    },
+    {
+      "title": "Private and Public Networks, Part 2 - Common Ground",
+      "slug": "private-and-public-networks-part-2-common-ground",
+      "url": "https://paragraph.com/@nyewarburton.eth/private-and-public-networks-part-2-common-ground",
+      "publishedAt": "2026-07-12",
+      "excerpt": "This week: the other kind of network! The kind nobody owns, and why I think it's where the promise is."
+    },
+    {
+      "title": "Private and Public Networks, Part 1",
+      "slug": "private-and-public-networks-part-1",
+      "url": "https://paragraph.com/@nyewarburton.eth/private-and-public-networks-part-1",
+      "publishedAt": "2026-07-05",
+      "excerpt": "This week kicks off a two-parter I've been chewing on while traveling: private and public networks."
+    },
+    {
+      "title": "The Engine Is the Next Frontier",
+      "slug": "the-engine-is-the-next-frontier",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-engine-is-the-next-frontier",
+      "publishedAt": "2026-06-28",
+      "excerpt": "Game Engines + AI will be insane."
+    },
+    {
+      "title": "It's All in the Collection",
+      "slug": "its-all-in-the-collection",
+      "url": "https://paragraph.com/@nyewarburton.eth/its-all-in-the-collection",
+      "publishedAt": "2026-06-21",
+      "excerpt": "It's not the ones who know how to use what model. They're the ones who walked in with something worth saying."
+    },
+    {
+      "title": "The Graphics Hack",
+      "slug": "the-graphics-hack",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-graphics-hack",
+      "publishedAt": "2026-06-14",
+      "excerpt": "The people you admire most in graphics are not the ones who do the most work. They are the ones who figure out how to do the least."
+    },
+    {
+      "title": "I'll Take my Data Share, Thanks",
+      "slug": "ill-take-my-data-share-thanks",
+      "url": "https://paragraph.com/@nyewarburton.eth/ill-take-my-data-share-thanks",
+      "publishedAt": "2026-06-06",
+      "excerpt": "Nye's Digital Lab is a weekly scribble on creatives in an age of rapid change. This week I'm looking at Bernie Sanders' plan to tax the AI giants and why I'd rather have a receipt than a check. A flat 50% tax treats my creative work like oil. A big pile of stuff to be split.…"
+    },
+    {
+      "title": "The Recruiting Trap",
+      "slug": "the-recruiting-trap",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-recruiting-trap",
+      "publishedAt": "2026-05-31",
+      "excerpt": "This year's distilled advice for the outgoing crop of creative graduates. Don't apply to jobs, solve problems."
+    },
+    {
+      "title": "Confronting the Backlash",
+      "slug": "confronting-the-backlash",
+      "url": "https://paragraph.com/@nyewarburton.eth/confronting-the-backlash",
+      "publishedAt": "2026-05-24",
+      "excerpt": "This week I am asking how badly we hate AI. Turns out, we hate it pretty bad."
+    },
+    {
+      "title": "Community OS",
+      "slug": "community-os",
+      "url": "https://paragraph.com/@nyewarburton.eth/community-os",
+      "publishedAt": "2026-05-17",
+      "excerpt": "This week, I'm starting to consider if communities can develop their own operating system."
+    },
+    {
+      "title": "I Don't Know",
+      "slug": "i-dont-know",
+      "url": "https://paragraph.com/@nyewarburton.eth/i-dont-know",
+      "publishedAt": "2026-05-10",
+      "excerpt": "This week I am admitting \"I don't know,\" and think education should start there."
+    },
+    {
+      "title": "The Two Currencies of Creativity",
+      "slug": "the-two-currencies-of-creativity",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-two-currencies-of-creativity",
+      "publishedAt": "2026-05-03",
+      "excerpt": "Lewis Hyde wrote a book called The Gift in 1983 that most people in creative fields have never read. They should."
+    },
+    {
+      "title": "Agentic Markets Could Fix Your Feed",
+      "slug": "agentic-markets-could-fix-your-feed",
+      "url": "https://paragraph.com/@nyewarburton.eth/agentic-markets-could-fix-your-feed",
+      "publishedAt": "2026-04-26",
+      "excerpt": "The more you use AI and agentic systems, the more they will know about you. And the more likely it is that they will buy and sell on your behalf, with other agents. What does that economy look like?"
+    },
+    {
+      "title": "Your AI Is Lying to You",
+      "slug": "your-ai-is-lying-to-you",
+      "url": "https://paragraph.com/@nyewarburton.eth/your-ai-is-lying-to-you",
+      "publishedAt": "2026-04-19",
+      "excerpt": "Once you see AI Sycophancy, you can't unsee it."
+    },
+    {
+      "title": "The Big Bang",
+      "slug": "the-big-bang",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-big-bang",
+      "publishedAt": "2026-04-12",
+      "excerpt": "This week, I'm considering the question I always seem to get: \"Is it a bubble?\""
+    },
+    {
+      "title": "The Art of Boredom",
+      "slug": "the-art-of-boredom",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-art-of-boredom",
+      "publishedAt": "2026-04-05",
+      "excerpt": "A few weeks ago I hit a wall. Not a creative wall, not writer’s block. I had forgotten how to be bored."
+    },
+    {
+      "title": "The Sprint Battlefield",
+      "slug": "the-sprint-battlefield",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-sprint-battlefield",
+      "publishedAt": "2026-03-29",
+      "excerpt": "This week I'm studying Ukrainian Drone Development, and how rapid learning is life or death."
+    },
+    {
+      "title": "The World is Now Different",
+      "slug": "the-world-is-now-different",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-world-is-now-different",
+      "publishedAt": "2026-03-22",
+      "excerpt": "This week, I'm reflecting on SXSW edu. I went to Austin to be on a panel. I came back with something harder to name."
+    },
+    {
+      "title": "Own the Data You Create",
+      "slug": "own-the-data-you-create",
+      "url": "https://paragraph.com/@nyewarburton.eth/own-the-data-you-create",
+      "publishedAt": "2026-03-15",
+      "excerpt": "This week I'm looking at Ben Affleck, a $600 million AI deal, and what it means for every creative who's been generating data for free."
+    },
+    {
+      "title": "Education by Mission Command",
+      "slug": "education-by-mission-command",
+      "url": "https://paragraph.com/@nyewarburton.eth/education-by-mission-command",
+      "publishedAt": "2026-03-08",
+      "excerpt": "This week, I'm considering the way creative organizations should lead when acceleration really begins to hit."
+    },
+    {
+      "title": "It's the Transition, Not Abundance or Collapse",
+      "slug": "its-the-transition-not-abundance-or-collapse",
+      "url": "https://paragraph.com/@nyewarburton.eth/its-the-transition-not-abundance-or-collapse",
+      "publishedAt": "2026-03-01",
+      "excerpt": "This week I am considering the societal transition period we are in, and how we should be adapting education to teach for it."
+    },
+    {
+      "title": "Capturing the Wisdom of the Crowd",
+      "slug": "capturing-the-wisdom-of-the-crowd",
+      "url": "https://paragraph.com/@nyewarburton.eth/capturing-the-wisdom-of-the-crowd",
+      "publishedAt": "2026-02-22",
+      "excerpt": "This week, I'm wrapping my head around \"Gambling\"... I'm sorry, \"Prediction Markets.\" And why I am very concerned about their use in our democracy."
+    },
+    {
+      "title": "Authenticity Arms Race",
+      "slug": "authenticity-arms-race",
+      "url": "https://paragraph.com/@nyewarburton.eth/authenticity-arms-race",
+      "publishedAt": "2026-02-15",
+      "excerpt": "This week, I'm considering that we might need a human-only internet, and what that means for the verification business."
+    },
+    {
+      "title": "Agile as Educational Opportunity",
+      "slug": "agile-as-educational-opportunity",
+      "url": "https://paragraph.com/@nyewarburton.eth/agile-as-educational-opportunity",
+      "publishedAt": "2026-02-07",
+      "excerpt": "After last week’s post, a few trusted folks reached out: “That’s great Nye. Can you explain what you mean by agile?” So! Here’s my deep dive on agile as an educational opportunity."
+    },
+    {
+      "title": "I never thought I could...",
+      "slug": "i-never-thought-i-could",
+      "url": "https://paragraph.com/@nyewarburton.eth/i-never-thought-i-could",
+      "publishedAt": "2026-02-01",
+      "excerpt": "I'm trying something new this week. With students, the counter to \"never thought I could\" is to hold the line."
+    },
+    {
+      "title": "What problem do humanoid robots solve?",
+      "slug": "what-problem-do-humanoid-robots-solve",
+      "url": "https://paragraph.com/@nyewarburton.eth/what-problem-do-humanoid-robots-solve",
+      "publishedAt": "2026-01-25",
+      "excerpt": "This week I'm asking about all these back-flipping humanoid robots on my feeds. Do we need them?"
+    },
+    {
+      "title": "Training Little Brains to Play Games",
+      "slug": "training-little-brains-to-play-games",
+      "url": "https://paragraph.com/@nyewarburton.eth/training-little-brains-to-play-games",
+      "publishedAt": "2026-01-18",
+      "excerpt": "This week I'm training agents, and documenting the phases of intelligence they seem to go through. It's gettin' wild."
+    },
+    {
+      "title": "If Bruce Lee were to teach AI",
+      "slug": "if-bruce-lee-were-to-teach-ai",
+      "url": "https://paragraph.com/@nyewarburton.eth/if-bruce-lee-were-to-teach-ai",
+      "publishedAt": "2026-01-11",
+      "excerpt": "This week I’m reconsidering how to teach AI, and looking to a different sort of master to do it."
+    },
+    {
+      "title": "My predictions for 2026",
+      "slug": "my-predictions-for-2026",
+      "url": "https://paragraph.com/@nyewarburton.eth/my-predictions-for-2026",
+      "publishedAt": "2026-01-04",
+      "excerpt": "It's a new year, and I'm focusing on three things. Here are my 2026 predictions."
+    },
+    {
+      "title": "A Book of Essays",
+      "slug": "a-book-of-essays",
+      "url": "https://paragraph.com/@nyewarburton.eth/a-book-of-essays",
+      "publishedAt": "2025-12-28",
+      "excerpt": "This week I published a book! And I'm reflecting on my weekly blog practice."
+    },
+    {
+      "title": "Arduino and the Fight for the Edge",
+      "slug": "arduino-and-the-fight-for-the-edge",
+      "url": "https://paragraph.com/@nyewarburton.eth/arduino-and-the-fight-for-the-edge",
+      "publishedAt": "2025-12-21",
+      "excerpt": "This week I am playing with the Arduino Uno Q, and wondering about AI on the edge."
+    },
+    {
+      "title": "Innovation is Flawed",
+      "slug": "innovation-is-flawed",
+      "url": "https://paragraph.com/@nyewarburton.eth/innovation-is-flawed",
+      "publishedAt": "2025-12-14",
+      "excerpt": "This week, I'm not trying to innovate, and considering that sometimes you just need to make it work."
+    },
+    {
+      "title": "The Search for the Reward Function",
+      "slug": "the-search-for-the-reward-function",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-search-for-the-reward-function",
+      "publishedAt": "2025-12-07",
+      "excerpt": "This week I’m focusing on the reward function, and figuring out the best way AI can optimize for it."
+    },
+    {
+      "title": "Finding Passion in China",
+      "slug": "finding-passion-in-china",
+      "url": "https://paragraph.com/@nyewarburton.eth/finding-passion-in-china",
+      "publishedAt": "2025-11-30",
+      "excerpt": "This week I’m on my way back from Beijing, where I spent the week looking for passion in a sea of check lists."
+    },
+    {
+      "title": "The Resistance is Reading",
+      "slug": "the-resistance-is-reading",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-resistance-is-reading",
+      "publishedAt": "2025-11-23",
+      "excerpt": "This week I am picking up a book, as an act of rebellion against algorithms."
+    },
+    {
+      "title": "The Art of Not Making It",
+      "slug": "the-art-of-not-making-it",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-art-of-not-making-it",
+      "publishedAt": "2025-11-16",
+      "excerpt": "This week, I'm publishing a work in progress by understanding that every essay I make is simply that."
+    },
+    {
+      "title": "Should Robots look like Us?",
+      "slug": "should-robots-look-like-us",
+      "url": "https://paragraph.com/@nyewarburton.eth/should-robots-look-like-us",
+      "publishedAt": "2025-11-09",
+      "excerpt": "This week I'm paying attention to that \"gut reaction\" when I see robots walking around, and thinking maybe we should be considering what it means."
+    },
+    {
+      "title": "The Ghost of Napster",
+      "slug": "the-ghost-of-napster",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-ghost-of-napster",
+      "publishedAt": "2025-11-02",
+      "excerpt": "This week I am endeavoring to untangle the crisis of AI copyright, and compare it to what happened to the music industry when peer to peer sharing suddenly arrived."
+    },
+    {
+      "title": "Projects with Purpose",
+      "slug": "projects-with-purpose",
+      "url": "https://paragraph.com/@nyewarburton.eth/projects-with-purpose",
+      "publishedAt": "2025-10-26",
+      "excerpt": "This week I'm thinking about making more projects, and using them to teach the building of things that matter."
+    },
+    {
+      "title": "My Heart Bleeds for Hollywood",
+      "slug": "my-heart-bleeds-for-hollywood",
+      "url": "https://paragraph.com/@nyewarburton.eth/my-heart-bleeds-for-hollywood",
+      "publishedAt": "2025-10-19",
+      "excerpt": "This week I am mourning a past life in LA, and worrying about the economic future of an industry that sustained so many friends."
+    },
+    {
+      "title": "When Automation meets \"The God Complex\"",
+      "slug": "when-automation-meets-the-god-complex",
+      "url": "https://paragraph.com/@nyewarburton.eth/when-automation-meets-the-god-complex",
+      "publishedAt": "2025-10-12",
+      "excerpt": "Maybe we should consider that it's possible to have too much unchecked power. This should especially be considered when automation meets \"The God Complex.\""
+    },
+    {
+      "title": "The Boss Fight Pedagogy",
+      "slug": "the-boss-fight-pedagogy",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-boss-fight-pedagogy",
+      "publishedAt": "2025-10-04",
+      "excerpt": "This week I'm taking on the boss at the end of the level, and hoping the next generation can do it without AI."
+    },
+    {
+      "title": "Utility Players",
+      "slug": "utility-players",
+      "url": "https://paragraph.com/@nyewarburton.eth/utility-players",
+      "publishedAt": "2025-09-28",
+      "excerpt": "This week I'm playing all the positions, and thinking maybe we all might be doing the same in the age of AI."
+    },
+    {
+      "title": "Networks of Trust",
+      "slug": "networks-of-trust",
+      "url": "https://paragraph.com/@nyewarburton.eth/networks-of-trust",
+      "publishedAt": "2025-09-21",
+      "excerpt": "This week I'm wondering how we can trust more, considering the technical, but focusing more on the neighbor next door."
+    },
+    {
+      "title": "Can AI teach my students?",
+      "slug": "can-ai-teach-my-students",
+      "url": "https://paragraph.com/@nyewarburton.eth/can-ai-teach-my-students",
+      "publishedAt": "2025-09-14",
+      "excerpt": "This week I am considering my own replacement, and wondering why I care so much."
+    },
+    {
+      "title": "The Search for Authentic Personal Value",
+      "slug": "the-search-for-authentic-personal-value",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-search-for-authentic-personal-value",
+      "publishedAt": "2025-09-07",
+      "excerpt": "The refrigerator drawings, the family inside jokes, the stories that only make sense to specific people in specific moments; these aren’t exceptions. They’re what value creation looks like when execution becomes effortless and meaning becomes everything."
+    },
+    {
+      "title": "The Vision of Drucker",
+      "slug": "the-vision-of-drucker",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-vision-of-drucker",
+      "publishedAt": "2025-08-30",
+      "excerpt": "Pete Drucker was insanely prescient, especially about where we are headed."
+    },
+    {
+      "title": "The Biff Problem",
+      "slug": "the-biff-problem",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-biff-problem",
+      "publishedAt": "2025-08-24",
+      "excerpt": "Let's think back to a VHS masterpiece to illustrate a really big problem. Biff is why we need decentralization."
+    },
+    {
+      "title": "The Art of Noise",
+      "slug": "the-art-of-noise",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-art-of-noise",
+      "publishedAt": "2025-08-16",
+      "excerpt": "Revolutionary artists are chaos hunters. They don't seek perfect control. They build systems that generate thousands of possibilities, then filter ruthlessly for the moments that matter."
+    },
+    {
+      "title": "Nothing",
+      "slug": "nothing",
+      "url": "https://paragraph.com/@nyewarburton.eth/nothing",
+      "publishedAt": "2025-08-10",
+      "excerpt": "This is nothing. See that? Already you probably think it’s something. It isn’t. It’s nothing."
+    },
+    {
+      "title": "LEGO to Protocol: Part 2",
+      "slug": "lego-to-protocol-part-2",
+      "url": "https://paragraph.com/@nyewarburton.eth/lego-to-protocol-part-2",
+      "publishedAt": "2025-08-01",
+      "excerpt": "I think the meme of \"the LEGO system\" powers everything from your favorite apps, to the internet, to \"whatever-the-heck global thing\" we are building with AI. This is part two of my special two-parter while I am on vacation!"
+    },
+    {
+      "title": "LEGO to Protocol: Part I",
+      "slug": "lego-to-protocol-part-i",
+      "url": "https://paragraph.com/@nyewarburton.eth/lego-to-protocol-part-i",
+      "publishedAt": "2025-07-27",
+      "excerpt": "I think the meme of \"the LEGO system\" powers everything. This is a special two-parter while I am on vacation!"
+    },
+    {
+      "title": "On Drawing More",
+      "slug": "on-drawing-more",
+      "url": "https://paragraph.com/@nyewarburton.eth/on-drawing-more",
+      "publishedAt": "2025-07-20",
+      "excerpt": "This week, I'm cracking open my sketchbook again. It's something we all should consider doing a lot more of."
+    },
+    {
+      "title": "Tech's Perfect Storm of Layoffs",
+      "slug": "techs-perfect-storm-of-layoffs",
+      "url": "https://paragraph.com/@nyewarburton.eth/techs-perfect-storm-of-layoffs",
+      "publishedAt": "2025-07-13",
+      "excerpt": "Here are the three seismic shifts reshaping our industry. What we're experiencing is, yes, the death of the way it used to be. And I am struggling with this truth, that it might be a painful but necessary transformation."
+    },
+    {
+      "title": "The Open Source Strategy",
+      "slug": "the-open-source-strategy",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-open-source-strategy",
+      "publishedAt": "2025-07-06",
+      "excerpt": "Companies are strategically embracing open-source. This isn't another tech story. It's a preview of a fundamental shift in how technology gets built, who controls it, and what that means for the rest of us."
+    },
+    {
+      "title": "Is it a New Computer?",
+      "slug": "is-it-a-new-computer",
+      "url": "https://paragraph.com/@nyewarburton.eth/is-it-a-new-computer",
+      "publishedAt": "2025-06-29",
+      "excerpt": "Artificial intelligence isn't just changing what computers can do. It's forcing us to completely reimagine what computers are and how we should think about them."
+    },
+    {
+      "title": "Why you should consider Savannah, GA",
+      "slug": "why-you-should-consider-savannah-ga",
+      "url": "https://paragraph.com/@nyewarburton.eth/why-you-should-consider-savannah-ga",
+      "publishedAt": "2025-06-22",
+      "excerpt": "This week, I'm writing about my home, Savannah, GA, and why creative professionals, tech workers, entrepreneurs tired of high-cost/low-opportunity markets might consider sustainable growth in a livable city. Especially now."
+    },
+    {
+      "title": "Analogous Connections of the Mind",
+      "slug": "analogous-connections",
+      "url": "https://paragraph.com/@nyewarburton.eth/analogous-connections",
+      "publishedAt": "2025-06-15",
+      "excerpt": "Douglas Hofstadter, analogous connections, and the emotional uniqueness that makes human creativity."
+    },
+    {
+      "title": "Quality of Code",
+      "slug": "quality-of-code",
+      "url": "https://paragraph.com/@nyewarburton.eth/quality-of-code",
+      "publishedAt": "2025-06-08",
+      "excerpt": "AI can now write code faster than most humans, and suddenly everyone with a Chat GPT account thinks they're a \"vibe\" programmer. What does it mean to create \"Quality Code?\""
+    },
+    {
+      "title": "WTF are Agents?",
+      "slug": "wtf-are-agents",
+      "url": "https://paragraph.com/@nyewarburton.eth/wtf-are-agents",
+      "publishedAt": "2025-06-01",
+      "excerpt": "The Noo B Guide to Agentic Workflow"
+    },
+    {
+      "title": "Childhood's End",
+      "slug": "childhoods-end",
+      "url": "https://paragraph.com/@nyewarburton.eth/childhoods-end",
+      "publishedAt": "2025-05-25",
+      "excerpt": "If social media could reshape an entire generation so profoundly, what will AI agents do to our children? My fear is it may be as Arthur Clarke predicted in his 1953 classic."
+    },
+    {
+      "title": "Yes, start a company...",
+      "slug": "yes-start-a-company",
+      "url": "https://paragraph.com/@nyewarburton.eth/yes-start-a-company",
+      "publishedAt": "2025-05-18",
+      "excerpt": "The best job for you is the one you create yourself."
+    },
+    {
+      "title": "A Love Letter to the Commodore 64",
+      "slug": "a-love-letter-to-the-commodore-64",
+      "url": "https://paragraph.com/@nyewarburton.eth/a-love-letter-to-the-commodore-64",
+      "publishedAt": "2025-05-11",
+      "excerpt": "How a personal computer from 1982 might help us define computing for tomorrow"
+    },
+    {
+      "title": "Understanding GPU Tokens",
+      "slug": "understanding-gpu-tokens",
+      "url": "https://paragraph.com/@nyewarburton.eth/understanding-gpu-tokens",
+      "publishedAt": "2025-05-04",
+      "excerpt": "In a world increasingly shaped by artificial intelligence, the currency that matters most might not be oil, dollars or bitcoin, but access to the computational power that makes intelligence itself possible."
+    },
+    {
+      "title": "Godlike Tools, Creative Stagnation",
+      "slug": "godlike-tools-creative-stagnation",
+      "url": "https://paragraph.com/@nyewarburton.eth/godlike-tools-creative-stagnation",
+      "publishedAt": "2025-04-27",
+      "excerpt": "We're trapped in a loop of recycled ideas. Will we have the courage to break out?"
+    },
+    {
+      "title": "Universal Basic Compute",
+      "slug": "universal-basic-compute",
+      "url": "https://paragraph.com/@nyewarburton.eth/universal-basic-compute",
+      "publishedAt": "2025-04-20",
+      "excerpt": "Universal Basic Compute proposes that advanced computing power should be accessible to everyone as a fundamental right, not just tech giants."
+    },
+    {
+      "title": "Reframing Crisis as Opportunity",
+      "slug": "reframing-crisis-as-opportunity",
+      "url": "https://paragraph.com/@nyewarburton.eth/reframing-crisis-as-opportunity",
+      "publishedAt": "2025-04-13",
+      "excerpt": "Even when all looks lost, life continues to find a way. When old systems collapse, new possibilities emerge. When old paths become blocked, humans find different routes. When crises hit, innovation accelerates."
+    },
+    {
+      "title": "Making Crypto Not-Suck",
+      "slug": "making-crypto-not-suck",
+      "url": "https://paragraph.com/@nyewarburton.eth/making-crypto-not-suck",
+      "publishedAt": "2025-04-07",
+      "excerpt": "To truly transform from niche interest to mainstream utility, the blockchain ecosystem must evolve beyond its self-referential culture and demonstrate real value for the everyday people who use the internet."
+    },
+    {
+      "title": "Here Comes Reinforcement Learning",
+      "slug": "here-comes-reinforcement-learning",
+      "url": "https://paragraph.com/@nyewarburton.eth/here-comes-reinforcement-learning",
+      "publishedAt": "2025-03-30",
+      "excerpt": "TLDR: Reinforcement Learning (RL) teaches AI to improve through millions of trial and error attempts at warp speed, powering everything from back-flipping robots to smarter cities."
+    },
+    {
+      "title": "Bear_Rabbit_Robot: Mapping AI's Latent Space",
+      "slug": "bear",
+      "url": "https://paragraph.com/@nyewarburton.eth/bear",
+      "publishedAt": "2025-03-13",
+      "excerpt": "\"Cartooning is for people who can't quite draw and can't quite write. You combine the two half-talents and come up with a career.\" — Matt Groening Bear, with the slightest amount of Rabbit and Robot. Stable Diffusion. Using AI for art is an exploration, not an act of creation.…"
+    },
+    {
+      "title": "Educational Citizenship",
+      "slug": "educational-citizenship",
+      "url": "https://paragraph.com/@nyewarburton.eth/educational-citizenship",
+      "publishedAt": "2025-03-06",
+      "excerpt": "TLDR: What if students viewed themselves as citizens rather than consumers of education? The Age of the Consumer, Stable Diffusion The Age of the Consumer Jeff Bezos built Amazon on an almost obsessive focus: give customers exactly what they want, when they want it. This isn't…"
+    },
+    {
+      "title": "Super Villain Networks: The Tech Bro’s Guide to World Domination",
+      "slug": "super-villain-networks-the-tech-bros-guide-to-world-domination",
+      "url": "https://paragraph.com/@nyewarburton.eth/super-villain-networks-the-tech-bros-guide-to-world-domination",
+      "publishedAt": "2025-02-11",
+      "excerpt": "TLDR:* Your friendly neighborhood guide to becoming tomorrow's tech overlord!* From AI-powered ego boosters to loyal robot minions and that pesky quest for digital immortality. (Ethics-Bypass Chip™ sold separately.)Contents Introduction: The Antiheroes We Deserve Chapter 1 /…"
+    },
+    {
+      "title": "My Robot Dog and Me",
+      "slug": "my-robot-dog-and-me",
+      "url": "https://paragraph.com/@nyewarburton.eth/my-robot-dog-and-me",
+      "publishedAt": "2025-01-28",
+      "excerpt": "The robots are coming. Just like their cousin, the quad-copter drones before them, the robot dog movement is in full swing, and it’s only a matter of time before we all have them. Now is the time for creatives to start playing with robotics. Contents:The Everyday Roboticist…"
+    },
+    {
+      "title": "Disruptions in Gaming: A Hypothesis",
+      "slug": "disruptions-in-gaming-a-hypothesis",
+      "url": "https://paragraph.com/@nyewarburton.eth/disruptions-in-gaming-a-hypothesis",
+      "publishedAt": "2025-01-07",
+      "excerpt": "TLDR: The gaming industry is undergoing a radical systemic transformation. My hypothesis: Individual game creators armed with AI tools, open-source software, and access to decentralized networks will compete effectively with large traditional game studios.…"
+    },
+    {
+      "title": "Rethinking Innovation: AI and the Problem with Objectives",
+      "slug": "rethinking-innovation-ai-and-the-problem-with-objectives",
+      "url": "https://paragraph.com/@nyewarburton.eth/rethinking-innovation-ai-and-the-problem-with-objectives",
+      "publishedAt": "2024-12-26",
+      "excerpt": "TLDR: AI science might reveal the secret to innovation: Stop Obsessing Over Objectives. The Objective-Driven World We're obsessed with objectives. From the moment we enter school, we're taught to set goals, make plans, and work systematically toward achieving them. Get good…"
+    },
+    {
+      "title": "Hang on! Coding a Game with AI",
+      "slug": "hang-on-coding-a-game-with-ai",
+      "url": "https://paragraph.com/@nyewarburton.eth/hang-on-coding-a-game-with-ai",
+      "publishedAt": "2024-12-18",
+      "excerpt": "TLDR: I wanted to see what coding a game with AI was like. Hold on, it's pretty nuts. My Prototype: Prototstar* Prototype built in Phaser.js using Windsurf IDE/Cascade Agent, powered by Codium and Claude Sonet 3.5 from Anthropic.*Contents:Can I build a game with AI? Coding with…"
+    },
+    {
+      "title": "The Revolution will be Automated",
+      "slug": "the-revolution-will-be-automated",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-revolution-will-be-automated",
+      "publishedAt": "2024-09-18",
+      "excerpt": "TLDR: The democratization of low code, easily accessible AI, and low cost hardware will spark a new revolution in personal automation computing. Homebrew 1.0 In the 1970s, a group of Silicon Valley enthusiasts gathered to form the Homebrew Computer Club. (1) These were the…"
+    },
+    {
+      "title": "The Future of Work: Embracing Passion, Decentralization, and Automation",
+      "slug": "the-future-of-work-embracing-passion",
+      "url": "https://paragraph.com/@nyewarburton.eth/the-future-of-work-embracing-passion",
+      "publishedAt": "2024-07-02",
+      "excerpt": "TLDR: On the eve of the Intelligence Revolution, perhaps it is time to reimagine the world of work, embracing a future that values passion, decentralization and automation.\"The antidote to exhaustion is not necessarily rest. The antidote to exhaustion is wholeheartedness.\" -…"
+    },
+    {
+      "title": "Is this Essay Real?",
+      "slug": "is-this-essay-real",
+      "url": "https://paragraph.com/@nyewarburton.eth/is-this-essay-real",
+      "publishedAt": "2024-03-14",
+      "excerpt": "Actionable Philosophy to cope with Reality Loss in the age of AI. Land of the Lost AR Uber Ride in New York (Stable Diffusion / Leonardo.ai)An image scrolls by in your social feed. “No way.” You think. That’s good, you have questioned it's authenticity. Your triggered defense is…"
+    },
+    {
+      "title": "Genghis Kahn & The Blockchain",
+      "slug": "genghis-kahn-and-the-blockchain",
+      "url": "https://paragraph.com/@nyewarburton.eth/genghis-kahn-and-the-blockchain",
+      "publishedAt": "2024-02-16",
+      "excerpt": "TLDR:: An essay analogizing the Mongol Horde of the Thirteenth Century, and the rise of protocol-driven blockchain networks. The Latent Space Recreation of the Thirteenth Century Mongolian Empire (Leonardo / Stable Diffusion / Dream Shaper V6.0)Introduction Genghis Khan built…"
+    },
+    {
+      "title": "Libertatem Machinae: Designing Responsible AI Systems",
+      "slug": "libertatem-machinae-designing-responsible-ai-systems",
+      "url": "https://paragraph.com/@nyewarburton.eth/libertatem-machinae-designing-responsible-ai-systems",
+      "publishedAt": "2024-01-02",
+      "excerpt": "TLDR: The responsible governance of AI systems may be the most important design challenge of the next decade. Solutions to this technical challenge may lie in the ethics of written constitutions. Contents Common Sense Constitutions AI Governance Claude's Constitutional…"
+    },
+    {
+      "title": "Own your work! Understanding IP for Artists",
+      "slug": "own-your-work-understanding-ip-for-artists",
+      "url": "https://paragraph.com/@nyewarburton.eth/own-your-work-understanding-ip-for-artists",
+      "publishedAt": "2023-12-15",
+      "excerpt": "TLDR - Young artists should understand why Intellectual Property is so important to their livelihood. Especially, in the age of AI. NOTE - I am not a lawyer, this is not legal advice. Where great cartoons go to die (Stable Diffusion)Development Hell When I was 29, I sold an…"
+    },
+    {
+      "title": "Rethinking Talent for Generative Game Pipelines",
+      "slug": "rethinking-talent-for-generative-game-pipelines",
+      "url": "https://paragraph.com/@nyewarburton.eth/rethinking-talent-for-generative-game-pipelines",
+      "publishedAt": "2023-12-03",
+      "excerpt": "TL;DR :: Artificial intelligence promises to completely transform every creative workflow. What does the need for creative talent look like in the game industry? If we look to the past, we see three potential archetypes. AI Imaged Pixel Art Level Maps, Stable Diffusion XLAI has…"
+    },
+    {
+      "title": "AI University",
+      "slug": "ai-university",
+      "url": "https://paragraph.com/@nyewarburton.eth/ai-university",
+      "publishedAt": "2023-04-02",
+      "excerpt": "The three components of a persistent, credentialed, global education network. The components of AI University Trustworthy AI Education? Artificial Intelligence will accelerate and democratize our ability to educate the entire planet. The pursuit of the global education ideal…"
+    },
+    {
+      "title": "Royalties, Attribution & the Blockchain",
+      "slug": "royalties",
+      "url": "https://paragraph.com/@nyewarburton.eth/royalties",
+      "publishedAt": "2023-02-15",
+      "excerpt": "Digital Artists are rarely rewarded with intellectual property ownership. The blockchain may provide an alternative. Movie Magic, Pen/Ink, Photoshop Centralized Production In 2012, the world marveled at the film adaptation of Life of Pi. The key to this film, was the performance…"
+    },
+    {
+      "title": "Gamifying Reputation",
+      "slug": "gamifying-reputation",
+      "url": "https://paragraph.com/@nyewarburton.eth/gamifying-reputation",
+      "publishedAt": "2023-02-08",
+      "excerpt": "We've spent a decade gamifying engagement in education, work, and health. Empty points are short-term dopamine hits. Maybe we should gamify our reputations. Disengagement, Pen and Ink/Photoshop The Disengagement Crisis Since the pandemic, the data has shown a disturbing trend in…"
+    },
+    {
+      "title": "Interoperable Storytelling",
+      "slug": "interoperable-storytelling",
+      "url": "https://paragraph.com/@nyewarburton.eth/interoperable-storytelling",
+      "publishedAt": "2023-02-01",
+      "excerpt": "The more modular our content becomes, the greater the potential for infinite, hyper-personal, storytelling. That's if the system allows it. BEDTIME STORYBedtime Story, Pen and Ink/Photoshop Every night, I make up a bedtime story for my kids. The first night was a joy, but I ran…"
+    },
+    {
+      "title": "Protecting Artists from Centralized AI",
+      "slug": "protecting-artists-from-centralized-ai",
+      "url": "https://paragraph.com/@nyewarburton.eth/protecting-artists-from-centralized-ai",
+      "publishedAt": "2023-01-24",
+      "excerpt": "If we are to defend our creative data from being sucked into large centralized AI models, we may need a new ethos and behavior. THE AI SOFTWARE ECOSYSTEMNeural Network, Pen and Ink. In a recent interview, Sam Altman, the CEO of Open AI, foretold a vision of how companies with…"
+    },
+    {
+      "title": "To Teach or Not to Teach Artificial Intelligence",
+      "slug": "to-teach-or-not-to-teach-artificial-intelligence",
+      "url": "https://paragraph.com/@nyewarburton.eth/to-teach-or-not-to-teach-artificial-intelligence",
+      "publishedAt": "2023-01-15",
+      "excerpt": "(Originally published on https://nyewarburton.com in Fall 2022.) While watching academic (and non-technical) environments, I’m beginning to see that the pervasive instinct is to ban AI in writing and artwork curriculum. The argument is that students will use it to facilitate…"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 ---
 import site from '../../content/site.json';
+import { withBase } from '../lib/paths';
 
 interface Props {
   name?: string;
@@ -14,11 +15,15 @@ const {
   students = site.students,
   lead = site.lead,
 } = Astro.props;
+const mark = withBase(site.mark);
 ---
 
 <header class="hero" aria-labelledby="hero-heading">
-  <h1 id="hero-heading">{name}</h1>
-  <p class="hero__role">{role}</p>
-  <p class="hero__students">{students}</p>
-  <p class="hero__lead">{lead}</p>
+  <img class="hero__mark" src={mark} width="512" height="512" alt={site.markAlt} />
+  <div class="hero__copy">
+    <h1 id="hero-heading">{name}</h1>
+    <p class="hero__role">{role}</p>
+    <p class="hero__students">{students}</p>
+    <p class="hero__lead">{lead}</p>
+  </div>
 </header>

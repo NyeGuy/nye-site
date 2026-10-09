@@ -7,4 +7,8 @@ export default defineConfig({
   base: '/nye-site',
   output: 'static',
   trailingSlash: 'always',
+  // Lets a public preview host reach `astro preview`. Does not change the Pages build.
+  server: {
+    allowedHosts: true,
+  },
 });

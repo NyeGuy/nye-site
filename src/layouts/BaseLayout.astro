@@ -11,6 +11,7 @@ interface Props {
 const title = Astro.props.title ?? site.title;
 const description = Astro.props.description ?? site.description;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const mark = new URL(withBase(site.mark), Astro.site).href;
 ---
 
 <!doctype html>
@@ -27,11 +28,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={mark} />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content={mark} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={withBase(site.mark)} type="image/png" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

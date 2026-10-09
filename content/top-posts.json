@@ -1,0 +1,80 @@
+{
+  "fetchedAt": "2026-10-09",
+  "publication": "https://paragraph.com/@nyewarburton.eth",
+  "earlierPublication": "https://paragraph.com/@nyewarburton",
+  "methodology": "Most popular: the five posts in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that order. Proposals are not a Paragraph ranking. They are the newest Digital Lab post (the widget does not include it) and the posts in this archive that Paragraph lists as Most popular on the earlier publication (paragraph.com/@nyewarburton) but not on the Digital Lab widget.",
+  "posts": [
+    {
+      "slug": "techs-perfect-storm-of-layoffs",
+      "source": "most-popular",
+      "reason": "Listed in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that widget’s order.",
+      "group": "digital-lab"
+    },
+    {
+      "slug": "childhoods-end",
+      "source": "most-popular",
+      "reason": "Listed in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that widget’s order.",
+      "group": "digital-lab"
+    },
+    {
+      "slug": "lego-to-protocol-part-i",
+      "source": "most-popular",
+      "reason": "Listed in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that widget’s order.",
+      "group": "digital-lab"
+    },
+    {
+      "slug": "the-resistance-is-reading",
+      "source": "most-popular",
+      "reason": "Listed in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that widget’s order.",
+      "group": "digital-lab"
+    },
+    {
+      "slug": "yes-start-a-company",
+      "source": "most-popular",
+      "reason": "Listed in Paragraph’s Most popular widget on Nye’s Digital Lab (paragraph.com/@nyewarburton.eth), in that widget’s order.",
+      "group": "digital-lab"
+    },
+    {
+      "slug": "i-got-99-essays-but-a-throughline-aint-one",
+      "source": "proposal",
+      "reason": "Newest post in the 100-post archive. Paragraph’s Most popular widget does not include it. Proposed so the current essay is on the homepage. Not a Paragraph ranking.",
+      "group": "newest"
+    },
+    {
+      "slug": "ai-university",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    },
+    {
+      "slug": "the-revolution-will-be-automated",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    },
+    {
+      "slug": "hang-on-coding-a-game-with-ai",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    },
+    {
+      "slug": "here-comes-reinforcement-learning",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    },
+    {
+      "slug": "to-teach-or-not-to-teach-artificial-intelligence",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    },
+    {
+      "slug": "genghis-kahn-and-the-blockchain",
+      "source": "proposal",
+      "reason": "Most popular on the earlier Paragraph publication (paragraph.com/@nyewarburton), and in this archive, but not in the Digital Lab Most popular widget. Proposed so those essays are not dropped. Not a new ranking.",
+      "group": "earlier-publication"
+    }
+  ]
+}

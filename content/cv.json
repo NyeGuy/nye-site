@@ -37,7 +37,8 @@
         {
           "when": "2022 – present",
           "title": "Dean of STEC, Savannah College of Art and Design",
-          "detail": "Educational Strategist, Creative Catalyst and Manager for SCAD’s ITGM BA, BFA, MA and MFA Game Development Programs"
+          "detail": "Educational Strategist, Creative Catalyst and Manager for SCAD’s ITGM BA, BFA, MA and MFA Game Development Programs",
+          "flag": "Source CV still titles this row “Chair, ITGM, Interactive Design and Game Development, School of Digital Media.” Shown as Dean of STEC, the approved present role. Confirm the title and whether 2022 is still the start year."
         },
         {
           "when": "2020 – 2022",
@@ -52,7 +53,8 @@
         {
           "when": "2013 –",
           "title": "Computer Graphics Consultant",
-          "detail": "Expert in computer graphics, game development, real time animation and pipeline."
+          "detail": "Expert in computer graphics, game development, real time animation and pipeline.",
+          "flag": "Source date is open-ended (“2013 –”) with no end year. Left as printed."
         }
       ]
     },
@@ -62,7 +64,8 @@
         {
           "when": "Spring 2024",
           "title": "Disruptions in Gaming: The Rapid Acceleration of Technology and the effect on Game Network Economics (a guess!)",
-          "detail": "Savannah College of Art and Design, Foundational Classes Workshop, Savannah, GA"
+          "detail": "Savannah College of Art and Design, Foundational Classes Workshop, Savannah, GA",
+          "flag": "The source title includes “(a guess!).” Left as printed."
         },
         {
           "when": "Fall 2022",
@@ -222,7 +225,8 @@
         {
           "when": "2008",
           "title": "Magnetism – Thesis Film",
-          "detail": "Academy of Art University, San Francisco, CA"
+          "detail": "Academy of Art University, San Francisco, CA",
+          "flag": "Source lists this thesis film in 2008. The same CV dates the MFA and the Magnetism awards to 2004. Year conflict left as printed."
         },
         {
           "when": "1999",
@@ -317,7 +321,8 @@
         {
           "when": "2013",
           "title": "Animator/Previsualization Artist, Malificent, Disney",
-          "detail": "Digital Domain, Los Angeles, CA"
+          "detail": "Digital Domain, Los Angeles, CA",
+          "flag": "Spelled “Malificent” on the source CV. The Disney film is usually “Maleficent.” Left as printed."
         },
         {
           "when": "2013",
@@ -327,7 +332,8 @@
         {
           "when": "2013",
           "title": "Post-Visualization Artist, Robosabient: Rebooted, Marvel",
-          "detail": "The Third Floor Inc., Los Angeles, CA"
+          "detail": "The Third Floor Inc., Los Angeles, CA",
+          "flag": "Printed as “Robosabient: Rebooted, Marvel.” The public CV does not resolve the title. Left as printed."
         },
         {
           "when": "2013",
@@ -382,7 +388,8 @@
         {
           "when": "2009",
           "title": "Senior Previsualization Artist, The Tooth Fairy, Fox Features",
-          "detail": "Fox Cinedev, Los Angeles, CA"
+          "detail": "Fox Cinedev, Los Angeles, CA",
+          "flag": "Source says “The Tooth Fairy.” The 2010 film is usually “Tooth Fairy.” Left as printed."
         },
         {
           "when": "2007 – 2008",
@@ -402,12 +409,14 @@
         {
           "when": "2007",
           "title": "Animator, Niagara’s Furry, Niagara Falls Tourism",
-          "detail": "Blur Studio, Los Angeles, CA"
+          "detail": "Blur Studio, Los Angeles, CA",
+          "flag": "Spelled “Niagara’s Furry” on the source CV. The attraction is usually “Niagara’s Fury.” Left as printed."
         },
         {
           "when": "2006",
           "title": "Animator, Monster’s Inc. Laugh Floor, Disney Imagineering",
-          "detail": "3D Site, Topanga, CA"
+          "detail": "3D Site, Topanga, CA",
+          "flag": "Spelled “Monster’s Inc. Laugh Floor” on the source CV. Left as printed."
         },
         {
           "when": "2005 – 2006",
@@ -467,7 +476,8 @@
         {
           "when": "2012",
           "title": "The Interndimensional Adventures of Floyd and Norm, Comic Series",
-          "detail": "Los Angeles, CA"
+          "detail": "Los Angeles, CA",
+          "flag": "Spelled “Interndimensional” on the source CV. Left as printed."
         }
       ]
     },
@@ -522,7 +532,8 @@
         {
           "when": "1995 – 1997",
           "title": "Improvisational Comedian, Without a Net",
-          "detail": "University of Pennsylvania, Philadelphia, PA"
+          "detail": "University of Pennsylvania, , Philadelphia, PA",
+          "flag": "Source place line has a double comma: “University of Pennsylvania, , Philadelphia, PA.” Restored as printed."
         },
         {
           "when": "2001 – 2002",
@@ -541,5 +552,6 @@
         }
       ]
     }
-  ]
+  ],
+  "introFlag": "The public CV intro still says he leads the Interactive Design & Game Development department and the new Applied AI Bachelor of Design, and it says “As Chair.” This page’s intro says Dean of STEC and does not repeat the Applied AI line. Confirm what the intro should claim."
 }

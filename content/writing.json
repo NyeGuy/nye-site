@@ -2,8 +2,8 @@
   "kicker": "Writing",
   "heading": "Writing",
   "title": "Writing – Nye Warburton",
-  "description": "Selected essays by Nye Warburton. Full pieces live on Paragraph and the original hosts.",
-  "intro": "I write to understand. A short draft set — title, date, and a line — then the essay lives where it was published.",
+  "description": "Essays by Nye Warburton. The archive links out to Paragraph. Full pieces stay on Paragraph.",
+  "intro": "I write to understand. Title, date, and a line — then the essay lives on Paragraph.",
   "homeCount": 5,
   "allLabel": "All writing",
   "feedLabel": "More on Paragraph",
@@ -11,8 +11,10 @@
   "subscribeLabel": "Subscribe on Substack",
   "subscribeHref": "https://nyewarburton.substack.com",
   "empty": "Essays are published on Paragraph.",
-  "sourceNote": "Provisional draft list. Not a ranking. Nye will name the set.",
-  "searchLabel": "Search this draft set",
-  "searchEmpty": "No matches in this draft set.",
-  "draftBadge": "Draft set"
+  "sourceNote": "Snapshot of Nye’s Digital Lab on 9 Oct 2026 (100 posts). Paragraph’s RSS only returns the latest 20, so this page reads the committed snapshot if a live fetch is not available. Not a ranking. The publication is the source of truth.",
+  "searchLabel": "Search the archive",
+  "searchEmpty": "No matches in this archive.",
+  "draftBadge": "Snapshot",
+  "earlierKicker": "Earlier selected essays",
+  "earlierNote": "From the public writing page and Mirror. Not a ranking. Anything already in the Paragraph archive is not repeated."
 }
