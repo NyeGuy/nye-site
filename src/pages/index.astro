@@ -4,29 +4,16 @@ import Hero from '../sections/Hero.astro';
 import Ethos from '../sections/Ethos.astro';
 import HomeLinks from '../sections/HomeLinks.astro';
 import site from '../../content/site.json';
-import { withBase } from '../lib/paths';
-
-const photo = withBase(site.photo);
-const photoWebp = withBase(site.photoWebp);
-const photoAvif = withBase(site.photoAvif);
 ---
 
 <BaseLayout>
   <div class="page page--home wrap">
     <Hero />
-    <figure class="home-photo">
-      <picture>
-        <source srcset={photoAvif} type="image/avif" width={site.photoWidth} height={site.photoHeight} />
-        <source srcset={photoWebp} type="image/webp" width={site.photoWidth} height={site.photoHeight} />
-        <img src={photo} width={site.photoWidth} height={site.photoHeight} alt={site.photoAlt} />
-      </picture>
-    </figure>
-    <p class="home-subtitle">{site.subtitle}</p>
-    <p class="home-lead">{site.lead}</p>
+    <div class="home-intro">
+      <p class="home-subtitle">{site.subtitle}</p>
+      <p class="home-lead">{site.lead}</p>
+    </div>
     <Ethos showKicker={false} />
     <HomeLinks />
-    <footer class="site-footer">
-      <p>© 2026 Nye Warburton</p>
-    </footer>
   </div>
 </BaseLayout>

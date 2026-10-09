@@ -1,5 +1,6 @@
 ---
 import site from '../../content/site.json';
+import home from '../../content/home.json';
 import { withBase } from '../lib/paths';
 
 const homeHref = withBase('/');
@@ -13,20 +14,38 @@ const cvPath = cvHref.replace(/\/+$/, '');
 const onHome = path === homePath;
 const onWriting = path === writingPath || path.startsWith(`${writingPath}/`);
 const onCv = path === cvPath;
+
+function current(label: string): boolean {
+  if (label === 'Writing') return onWriting;
+  if (label === 'CV') return onCv;
+  return false;
+}
 ---
 
 <header class="site-nav wrap">
-  <a class:list={['site-nav__home', { 'is-current': onHome }]} href={homeHref}>{site.name}</a>
+  <a class:list={['site-nav__home', { 'is-current': onHome }]} href={homeHref} aria-current={onHome ? 'page' : undefined}>
+    {site.name}
+  </a>
   <nav aria-label="Site">
     <ul class="site-nav__links">
-      <li>
-        <a class:list={{ 'is-current': onWriting }} href={writingHref} aria-current={onWriting ? 'page' : undefined}>
-          Writing
-        </a>
-      </li>
-      <li>
-        <a class:list={{ 'is-current': onCv }} href={cvHref} aria-current={onCv ? 'page' : undefined}>CV</a>
-      </li>
+      {
+        home.links.map((link) => (
+          <li>
+            {link.soon ? (
+              <span class="site-nav__soon">{link.label}</span>
+            ) : (
+              <a
+                class:list={{ 'is-current': current(link.label) }}
+                href={link.internal ? withBase(link.href) : link.href}
+                rel={link.internal ? undefined : 'noopener noreferrer'}
+                aria-current={current(link.label) ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            )}
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>

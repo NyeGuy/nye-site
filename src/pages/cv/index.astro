@@ -1,12 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import SiteNav from '../../components/SiteNav.astro';
 import cv from '../../../content/cv.json';
-import site from '../../../content/site.json';
 ---
 
 <BaseLayout title={cv.title} description={cv.description}>
-  <SiteNav />
   <div class="page wrap page--cv">
     <header class="page-head">
       <h1>{cv.fullName}</h1>
@@ -46,9 +43,5 @@ import site from '../../../content/site.json';
         </section>
       ))
     }
-
-    <footer class="site-footer">
-      <p>{site.name}</p>
-    </footer>
   </div>
 </BaseLayout>

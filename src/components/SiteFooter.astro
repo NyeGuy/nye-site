@@ -1,0 +1,53 @@
+---
+import home from '../../content/home.json';
+import { withBase } from '../lib/paths';
+
+const homeHref = withBase('/');
+const writingHref = withBase('writing/');
+const cvHref = withBase('cv/');
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const homePath = homeHref.replace(/\/+$/, '') || '/';
+const writingPath = writingHref.replace(/\/+$/, '');
+const cvPath = cvHref.replace(/\/+$/, '');
+
+const onHome = path === homePath;
+const onWriting = path === writingPath || path.startsWith(`${writingPath}/`);
+const onCv = path === cvPath;
+
+function current(label: string): boolean {
+  if (label === 'Writing') return onWriting;
+  if (label === 'CV') return onCv;
+  return false;
+}
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="site-footer__nav" aria-label="Footer">
+      <ul>
+        <li>
+          <a href={homeHref} class:list={{ 'is-current': onHome }} aria-current={onHome ? 'page' : undefined}>Home</a>
+        </li>
+        {
+          home.links.map((link) => (
+            <li>
+              {link.soon ? (
+                <span class="site-footer__soon">{link.label}</span>
+              ) : (
+                <a
+                  href={link.internal ? withBase(link.href) : link.href}
+                  class:list={{ 'is-current': current(link.label) }}
+                  rel={link.internal ? undefined : 'noopener noreferrer'}
+                  aria-current={current(link.label) ? 'page' : undefined}
+                >
+                  {link.label}
+                </a>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <p>© 2026 Nye Warburton</p>
+  </div>
+</footer>

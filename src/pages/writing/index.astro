@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import SiteNav from '../../components/SiteNav.astro';
 import Writing from '../../sections/Writing.astro';
 import WritingArchive from '../../sections/WritingArchive.astro';
 import writing from '../../../content/writing.json';
-import site from '../../../content/site.json';
 import { loadEssays } from '../../lib/essays';
 import { loadPosts } from '../../lib/posts';
 
@@ -14,7 +12,6 @@ const earlier = loadEssays().filter((essay) => !archiveTitles.has(essay.title.to
 ---
 
 <BaseLayout title={writing.title} description={writing.description}>
-  <SiteNav />
   <div class="page page--writing wrap">
     <WritingArchive posts={posts} />
     {
@@ -28,8 +25,5 @@ const earlier = loadEssays().filter((essay) => !archiveTitles.has(essay.title.to
         />
       )
     }
-    <footer class="site-footer">
-      <p>{site.name}</p>
-    </footer>
   </div>
 </BaseLayout>

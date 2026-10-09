@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import site from '../../content/site.json';
 import { withBase } from '../lib/paths';
 
@@ -39,8 +41,10 @@ const mark = new URL(withBase(site.mark), Astro.site).href;
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <SiteNav />
     <main id="main">
       <slot />
     </main>
+    <SiteFooter />
   </body>
 </html>

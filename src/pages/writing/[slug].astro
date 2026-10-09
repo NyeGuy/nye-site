@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import SiteNav from '../../components/SiteNav.astro';
 import site from '../../../content/site.json';
 import { getPost, loadPosts } from '../../lib/posts';
 import { renderEssayHtml } from '../../lib/sanitize-essay.mjs';
@@ -22,7 +21,6 @@ const writingHref = withBase('writing/');
 ---
 
 <BaseLayout title={`${post.title} – Nye Warburton`} description={post.excerpt || post.subtitle || site.description}>
-  <SiteNav />
   <div class="page page--essay wrap">
     <article class="essay">
       <header class="essay__header">
@@ -38,8 +36,5 @@ const writingHref = withBase('writing/');
         <a href={post.url} rel="noopener noreferrer">Original on Paragraph</a>
       </p>
     </article>
-    <footer class="site-footer">
-      <p>{site.name}</p>
-    </footer>
   </div>
 </BaseLayout>
