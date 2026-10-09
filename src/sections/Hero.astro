@@ -16,14 +16,20 @@ const {
   lead = site.lead,
 } = Astro.props;
 const mark = withBase(site.mark);
+const photo = withBase(site.photo);
 ---
 
 <header class="hero" aria-labelledby="hero-heading">
-  <img class="hero__mark" src={mark} width="512" height="512" alt={site.markAlt} />
-  <div class="hero__copy">
-    <h1 id="hero-heading">{name}</h1>
-    <p class="hero__role">{role}</p>
-    <p class="hero__students">{students}</p>
+  <div class="hero__identity">
+    <img class="hero__mark" src={mark} width="512" height="512" alt={site.markAlt} />
+    <div class="hero__copy">
+      <h1 id="hero-heading">{name}</h1>
+      <p class="hero__role">{role}</p>
+      <p class="hero__students">{students}</p>
+    </div>
+  </div>
+  <div class="hero__intro">
+    <img class="hero__photo" src={photo} width="2046" height="1536" alt={site.photoAlt} />
     <p class="hero__lead">{lead}</p>
   </div>
 </header>

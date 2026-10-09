@@ -58,20 +58,21 @@ Visitor-facing text is under `content/`. Components read those files; they do no
 | `content/work.json` | Paragraph, Substack (subscribe), Writing, CV, optional Book |
 | `content/writing.json` | Writing index labels, Paragraph more-link, Substack subscribe |
 | `content/essays.json` | Earlier selected essays that are not in the Paragraph archive |
-| `content/paragraph_posts.json` | Fallback snapshot of all 100 Digital Lab posts |
+| `content/paragraph_posts.json` | Full-text snapshot of the Digital Lab (fallback if the Paragraph API is down) |
+| `content/writing-search.json` | Title and full-text search documents for `/writing` |
 | `content/top-posts.json` | Which homepage posts are Most popular, and which are proposals |
 | `content/background.json` | Home background paragraphs |
 | `content/cv.json` | Public CV; present title is Dean of STEC; flagged rows stay flagged |
 | `content/ethos.json` | Ethos lines and “Make it Happen.” |
 
-Do not invent CV lines, freelance availability, logos, photographs, or essay rankings. Do not paste full essays into the repo.
+Do not invent CV lines, freelance availability, logos, or essay rankings. The intro photograph is the Town Hall picture from nyewarburton.com. Essays are read on this site; the Paragraph snapshot is the fallback copy.
 
 ## Content rules
 
 - Personal brand only. No Satellite Lab nested content.
 - `/cv` is the public CV only (https://nyewarburton.com/cv-2/). Present role is Dean of STEC at SCAD.
 - Home top posts: five from Paragraph’s Most popular widget, then proposals (newest essay, plus Most popular on the earlier Paragraph publication). Not a new ranking.
-- `/writing` lists the 100-post snapshot and links out. More on Paragraph; Substack is a subscribe link.
+- `/writing` is the archive. Search covers title and full text. Each essay has its own page. Paragraph and Substack stay as publication and subscribe links.
 - CV flags are review notes. Spellings and odd years stay as printed.
 - Ethos lines stay exact.
 - Grey palette with an optional restrained accent, quieter than Satellite Lab gold.
@@ -81,5 +82,5 @@ Do not invent CV lines, freelance availability, logos, photographs, or essay ran
 
 - Astro, `output: 'static'`
 - System stacks: Georgia (headings), Helvetica Neue / Arial (body, labels)
-- Almost no runtime JavaScript (writing search only, over the curated set)
+- Runtime JavaScript is the writing search (MiniSearch over the archive)
 - No Algolia or hosted search

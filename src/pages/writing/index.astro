@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import Writing from '../../sections/Writing.astro';
+import WritingArchive from '../../sections/WritingArchive.astro';
 import writing from '../../../content/writing.json';
 import site from '../../../content/site.json';
 import { loadEssays } from '../../lib/essays';
@@ -14,28 +15,17 @@ const earlier = loadEssays().filter((essay) => !archiveTitles.has(essay.title.to
 
 <BaseLayout title={writing.title} description={writing.description}>
   <SiteNav />
-  <div class="page wrap">
-    <header class="page-head">
-      <h1>{writing.heading}</h1>
-      <p class="page-head__lead">{writing.intro}</p>
-    </header>
-    <Writing
-      essays={posts.map((post) => ({
-        title: post.title,
-        date: post.date,
-        dateLabel: post.dateLabel,
-        url: post.url,
-        blurb: post.excerpt,
-        searchText: post.searchText,
-      }))}
-      kicker="Archive"
-      intro=""
-      showSearch
-      showDraftNote
-    />
+  <div class="page page--writing wrap">
+    <WritingArchive posts={posts} />
     {
       earlier.length > 0 && (
-        <Writing essays={earlier} kicker={writing.earlierKicker} intro={writing.earlierNote} />
+        <Writing
+          essays={earlier}
+          kicker={writing.earlierKicker}
+          intro={writing.earlierNote}
+          headingId="earlier-heading"
+          sectionId="earlier"
+        />
       )
     }
     <footer class="site-footer">

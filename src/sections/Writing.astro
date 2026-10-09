@@ -11,6 +11,8 @@ interface Props {
   showAllLink?: boolean;
   showSearch?: boolean;
   showDraftNote?: boolean;
+  headingId?: string;
+  sectionId?: string;
 }
 
 const kicker = Astro.props.kicker ?? writing.kicker;
@@ -19,14 +21,16 @@ const essays = Astro.props.essays;
 const showAllLink = Astro.props.showAllLink ?? false;
 const showSearch = Astro.props.showSearch ?? false;
 const showDraftNote = Astro.props.showDraftNote ?? false;
+const headingId = Astro.props.headingId ?? 'writing-heading';
+const sectionId = Astro.props.sectionId ?? 'writing';
 
 function dateTime(value: string): string | undefined {
   return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : undefined;
 }
 ---
 
-<section class="writing" id="writing" aria-labelledby="writing-heading">
-  <h2 class="kicker" id="writing-heading">{kicker}</h2>
+<section class="writing" id={sectionId} aria-labelledby={headingId}>
+  <h2 class="kicker" id={headingId}>{kicker}</h2>
   {intro && <p class="writing__intro">{intro}</p>}
   {
     showDraftNote && catalog.draft && (

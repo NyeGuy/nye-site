@@ -11,7 +11,7 @@ const writingPath = writingHref.replace(/\/+$/, '');
 const cvPath = cvHref.replace(/\/+$/, '');
 
 const onHome = path === homePath;
-const onWriting = path === writingPath;
+const onWriting = path === writingPath || path.startsWith(`${writingPath}/`);
 const onCv = path === cvPath;
 ---
 

@@ -123,7 +123,7 @@ Visitor-facing copy is in [`content/`](./content/). Components read those files;
 | `content/work.json` | Writing and publishing links |
 | `content/writing.json` | Writing index labels, Paragraph more-link, Substack subscribe |
 | `content/essays.json` | Earlier selected essays not already in the Paragraph archive |
-| `content/paragraph_posts.json` | Fallback snapshot of all 100 Digital Lab posts |
+| `content/paragraph_posts.json` | Full-text snapshot of the Digital Lab; build refreshes it from the Paragraph API |
 | `content/top-posts.json` | Homepage top posts: Most popular vs proposals |
 | `content/background.json` | Home background paragraphs |
 | `content/cv.json` | Public CV (Dean of STEC for present), with review flags |
@@ -140,6 +140,6 @@ Do not touch:
 - **Satellite Lab** nested content, tracks, people, or lab branding
 - **nye-site-play** deploy target (Vercel). Official Pages stays here.
 - **CMS**, analytics, or CDN webfonts
-- **Invented CV**, freelance availability, logos, or photographs
-- **Full-text essay mirrors.** The archive snapshot is titles, dates, and card blurbs only
+- **Invented CV**, freelance availability, or logos
 - **Invented essay titles or rankings.** Most popular means Paragraph’s widget. Proposals stay labeled as proposals
+- **A photograph of anyone other than Nye**, or a generated portrait. The intro photo is the Town Hall picture from nyewarburton.com
